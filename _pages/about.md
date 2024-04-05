@@ -9,6 +9,7 @@ profile:
   image: massi.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
+    <p>Assistant Professor</p>
     <p>Department of Information Engineering</p>
     <p>and Computer Science</p>
     <p>Trento, Italy</p>
