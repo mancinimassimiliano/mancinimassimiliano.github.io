@@ -24,15 +24,12 @@
   title={Structured Domain Adaptation for 3D Keypoint Estimation},
   author={Vasconcelos, Levi O and Mancini, Massimiliano and Boscaini, Davide and Caputo, Barbara and Ricci, Elisa},
   booktitle={2019 International Conference on 3D Vision (3DV)},
-  pages={57--66},
   year={2019},
   organization={IEEE},
   preview={3dv2019.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://ieeexplore.ieee.org/abstract/document/8885979},
   selected={false},
-  abstract={}
+  abstract={Motivated by recent advances in deep domain adaptation, this paper introduces a deep architecture for estimating 3D keypoints when the training (source) and the test (target) images greatly differ in terms of visual appearance (domain shift). Our approach operates by promoting domain distribution alignment in the feature space adopting batch normalization-based techniques. Furthermore, we propose to collect statistics about 3D keypoints positions of the source training data and to use this prior information to constrain predictions on the target domain introducing a loss derived from Multidimensional Scaling. We conduct an extensive experimental evaluation considering three publicly available benchmarks and show that our approach out-performs state-of-the-art domain adaptation methods for 3D keypoints predictions.}
 }
 
 
@@ -43,13 +40,12 @@
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
     month     = {June},
     year      = {2022},
-    pages     = {4165-4174},
   preview={acvc2022},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://openaccess.thecvf.com/content/CVPR2022W/L3D-IVU/html/Cugu_Attention_Consistency_on_Visual_Corruptions_for_Single-Source_Domain_Generalization_CVPRW_2022_paper.html},
+  pdf={https://openaccess.thecvf.com/content/CVPR2022W/L3D-IVU/papers/Cugu_Attention_Consistency_on_Visual_Corruptions_for_Single-Source_Domain_Generalization_CVPRW_2022_paper.pdf},
+  code={https://github.com/ExplainableML/ACVC},
   selected={false},
-  abstract={}
+  abstract={Generalizing visual recognition models trained on a single distribution to unseen input distributions (i.e. domains) requires making them robust to superfluous correlations in the training set. In this work, we achieve this goal by altering the training images to simulate new domains and imposing consistent visual attention across the different views of the same sample. We discover that the first objective can be simply and effectively met through visual corruptions. Specifically, we alter the content of the training images using the nineteen corruptions of the ImageNet-C benchmark and three additional transformations based on Fourier transform. Since these corruptions preserve object locations, we propose an attention consistency loss to ensure that class activation maps across original and corrupted versions of the same training sample are aligned. We name our model Attention Consistency on Visual Corruptions (ACVC). We show that ACVC consistently achieves the state of the art on three single-source domain generalization benchmarks, PACS, COCO, and the large-scale DomainNet.}
 }
 
 
@@ -60,11 +56,10 @@
   booktitle={British Machine Vision Conference},
   year={2021},
   preview={bmvc2021.png},
-  html={},  
-  pdf={},
-  code={},   
+  pdf={https://www.bmvc2021-virtualconference.com/assets/papers/0484.pdf},
+  code={https://github.com/fcdl94/FSS},
   selected={false},
-  abstract={}
+  abstract={Semantic segmentation models have two fundamental weaknesses: i) they require large training sets with costly pixel-level annotations, and ii) they have a static output space, constrained to the classes of the training set. Toward addressing both problems, we introduce a new task, Incremental Few-Shot Segmentation (iFSS). The goal of iFSS is to extend a pretrained segmentation model with new classes from few annotated images and without access to old training data. To overcome the limitations of existing models iniFSS, we propose Prototype-based Incremental Few-Shot Segmentation (PIFS) that couples prototype learning and knowledge distillation. PIFS exploits prototypes to initialize the classifiers of new classes, fine-tuning the network to refine its features representation. We design a prototype-based distillation loss on the scores of both old and new class prototypes to avoid overfitting and forgetting, and batch-renormalization to cope with non-i.i.d.few-shot data. We create an extensive benchmark for iFSS showing that PIFS outperforms several few-shot and incremental learning methods in all scenarios.}
 }
 
 
@@ -75,11 +70,10 @@
   booktitle={British Machine Vision Conference},
   year={2022},
   preview={bmvc2022.png},
-  html={},  
-  pdf={},
-  code={},   
+  pdf={https://bmvc2022.mpi-inf.mpg.de/0499.pdf},
+  code={https://github.com/abhrac/xmodal-vit},
   selected={false},
-  abstract={}
+  abstract={Representation learning for sketch-based image retrieval has mostly been tackled by learning embeddings that discard modality-specific information. As instances from different modalities can often provide complementary information describing the underlying concept, we propose a cross-attention framework for Vision Transformers (XModalViT) that fuses modality-specific information instead of discarding them. Our framework first maps paired datapoints from the individual photo and sketch modalities to fused representations that unify information from both modalities. We then decouple the input space of the aforementioned modality fusion network into independent encoders of the individual modalities via contrastive and relational cross-modal knowledge distillation. Such encoders can then be applied to downstream tasks like cross-modal retrieval. We demonstrate the expressive capacity of the learned representations by performing a wide range of experiments and achieving state-of-the-art results on three fine-grained sketch-based image retrieval benchmarks: Shoe-V2, Chair-V2 and Sketchy. }
 }
 
 
@@ -103,12 +97,17 @@
   author={Mancini, Massimiliano and Naeem, Muhammad Ferjad and Xian, Yongqin and Akata, Zeynep},
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
   title={Learning Graph Embeddings for Open World Compositional Zero-Shot Learning}, 
-  year={2022},
-  volume={},
-  number={},
-  pages={1-1},
+  year={2024},
+  volume={46},
+  number={3},
+  pages={1545-1560},
   doi={10.1109/TPAMI.2022.3163667},
-  preview={co-cge-pami2022.png}
+  selected={false},
+  preview={co-cge-pami2022.png},
+  code={https://github.com/ExplainableML/co-cge},
+  pdf={https://arxiv.org/pdf/2105.01017.pdf},
+  html={https://ieeexplore.ieee.org/abstract/document/9745371/},
+  abstract={Compositional Zero-Shot learning (CZSL) aims to recognize unseen compositions of state and object visual primitives seen during training. A problem with standard CZSL is the assumption of knowing which unseen compositions will be available at test time. In this work, we overcome this assumption operating on the open world setting, where no limit is imposed on the compositional space at test time, and the search space contains a large number of unseen compositions. To address this problem, we propose a new approach, Compositional Cosine Graph Embeddings (Co-CGE), based on two principles. First, Co-CGE models the dependency between states, objects and their compositions through a graph convolutional neural network. The graph propagates information from seen to unseen concepts, improving their representations. Second, since not all unseen compositions are equally feasible, and less feasible ones may damage the learned representations, Co-CGE estimates a feasibility score for each unseen composition, using the scores as margins in a cosine similarity-based loss and as weights in the adjacency matrix of the graphs. Experiments show that our approach achieves state-of-the-art performances in standard CZSL while outperforming previous methods in the open world scenario.}
  }
 
 @inproceedings{dutta2021concurrent,
@@ -119,11 +118,11 @@
   pages={2189--2198},
   year={2021},
   preview={codial.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://arxiv.org/abs/2108.08562},
+  pdf={https://arxiv.org/pdf/2108.08562.pdf},
+  code={https://github.com/AnjanDutta/codial},
   selected={false},
-  abstract={}
+  abstract={Existing self-supervised learning methods learn representation by means of pretext tasks which are either (1) discriminating that explicitly specify which features should be separated or (2) aligning that precisely indicate which features should be closed together, but ignore the fact how to jointly and principally define which features to be repelled and which ones to be attracted. In this work, we combine the positive aspects of the discriminating and aligning methods, and design a hybrid method that addresses the above issue. Our method explicitly specifies the repulsion and attraction mechanism respectively by discriminative predictive task and concurrently maximizing mutual information between paired views sharing redundant information. We qualitatively and quantitatively show that our proposed model learns better features that are more effective for the diverse downstream tasks ranging from classification to semantic segmentation. Our experiments on nine established benchmarks show that the proposed model consistently outperforms the existing state-of-the-art results of self-supervised and transfer learning protocol.}
 }
 
 
@@ -133,13 +132,12 @@
   	title  = {Boosting Domain Adaptation by Discovering Latent Domains},
   	booktitle = {Computer Vision and Pattern Recognition (CVPR)},
   	year      = {2018},
-  	month     = {June},
   preview={latent-domains.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://openaccess.thecvf.com/content_cvpr_2018/html/Mancini_Boosting_Domain_Adaptation_CVPR_2018_paper.html},
+  pdf={https://openaccess.thecvf.com/content_cvpr_2018/papers/Mancini_Boosting_Domain_Adaptation_CVPR_2018_paper.pdf},
+  code={https://github.com/mancinimassimiliano/latent_domains_DA},
   selected={false},
-  abstract={}
+  abstract={Current Domain Adaptation (DA) methods based on deep architectures assume that the source samples arise from a single distribution. However, in practice most datasets can be regarded as mixtures of multiple domains. In these cases exploiting single-source DA methods for learning target classifiers may lead to sub-optimal, if not poor, results. In addition, in many applications it is difficult to manually provide the domain labels for all source data points, ie latent domains should be automatically discovered. This paper introduces a novel Convolutional Neural Network (CNN) architecture which (i) automatically discovers latent domains in visual datasets and (ii) exploits this information to learn robust target classifiers. Our approach is based on the introduction of two main components, which can be embedded into any existing CNN architecture:(i) a side branch that automatically computes the assignment of a source sample to a latent domain and (ii) novel layers that exploit domain membership information to appropriately align the distribution of the CNN internal feature representations to a reference distribution. We test our approach on publicly-available datasets, showing that it outperforms state-of-the-art multi-source DA methods by a large margin.},
 }
 
 
@@ -148,14 +146,13 @@
 author = {Cermelli, Fabio and Mancini, Massimiliano and Bulò, Samuel Rota and Ricci, Elisa and Caputo, Barbara},
 title = {Modeling the Background for Incremental Learning in Semantic Segmentation},
 booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-month = {June},
 year = {2020},
   preview={latent-domains.png},
-  html={},  
-  pdf={},
-  code={},   
-  selected={false},
-  abstract={}
+  html={https://openaccess.thecvf.com/content_CVPR_2020/html/Cermelli_Modeling_the_Background_for_Incremental_Learning_in_Semantic_Segmentation_CVPR_2020_paper.html},
+  pdf={https://openaccess.thecvf.com/content_CVPR_2020/papers/Cermelli_Modeling_the_Background_for_Incremental_Learning_in_Semantic_Segmentation_CVPR_2020_paper.pdf},
+  code={https://github.com/fcdl94/MiB},
+  selected={true},
+  abstract={Despite their effectiveness in a wide range of tasks, deep architectures suffer from some important limitations. In particular, they are vulnerable to catastrophic forgetting, ie they perform poorly when they are required to update their model as new classes are available but the original training set is not retained. This paper addresses this problem in the context of semantic segmentation. Current strategies fail on this task because they do not consider a peculiar aspect of semantic segmentation: since each training step provides annotation only for a subset of all possible classes, pixels of the background class (ie pixels that do not belong to any other classes) exhibit a semantic distribution shift. In this work we revisit classical incremental learning methods, proposing a new distillation-based framework which explicitly accounts for this shift. Furthermore, we introduce a novel strategy to initialize classifier's parameters, thus preventing biased predictions toward the background class. We demonstrate the effectiveness of our approach with an extensive evaluation on the Pascal-VOC 2012 and ADE20K datasets, significantly outperforming state of the art incremental learning methods.}
 }
 
 
@@ -164,7 +161,6 @@ year = {2020},
   title={Open World Compositional Zero-Shot Learning},
   author={Mancini, Massimiliano and Naeem, Muhammad Ferjad and Xian, Yongqin and Akata, Zeynep},
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  month = {June},
   year={2021},
   preview={cvpr2021.png},
   html={https://openaccess.thecvf.com/content/CVPR2021/html/Mancini_Open_World_Compositional_Zero-Shot_Learning_CVPR_2021_paper.html},  
@@ -180,15 +176,13 @@ year = {2020},
     author    = {Karthik, Shyamgopal and Mancini, Massimiliano and Akata, Zeynep},
     title     = {KG-SP: Knowledge Guided Simple Primitives for Open World Compositional Zero-Shot Learning},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
     year      = {2022},
-    pages     = {9336-9345},
   preview={cvpr2022.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={http://openaccess.thecvf.com/content/CVPR2022/html/Karthik_KG-SP_Knowledge_Guided_Simple_Primitives_for_Open_World_Compositional_Zero-Shot_CVPR_2022_paper.html},
+  pdf={http://openaccess.thecvf.com/content/CVPR2022/papers/Karthik_KG-SP_Knowledge_Guided_Simple_Primitives_for_Open_World_Compositional_Zero-Shot_CVPR_2022_paper.pdf},
+  code={https://github.com/ExplainableML/KG-SP},
   selected={false},
-  abstract={}
+  abstract={The goal of open-world compositional zero-shot learning (OW-CZSL) is to recognize compositions of state and objects in images, given only a subset of them during training and no prior on the unseen compositions. In this setting, models operate on a huge output space, containing all possible state-object compositions. While previous works tackle the problem by learning embeddings for the compositions jointly, here we revisit a simple CZSL baseline and predict the primitives, ie states and objects, independently. To ensure that the model develops primitive-specific features, we equip the state and object classifiers with separate, non-linear feature extractors. Moreover, we estimate the feasibility of each composition through external knowledge, using this prior to remove unfeasible compositions from the output space. Finally, we propose a new setting, ie CZSL under partial supervision (pCZSL), where either only objects or state labels are available during training and we can use our prior to estimate the missing labels. Our model, Knowledge-Guided Simple Primitives (KG-SP), achieves the state of the art in both OW-CZSL and pCZSL, surpassing most recent competitors even when coupled with semi-supervised learning techniques}
 }
 
 
@@ -197,7 +191,6 @@ year = {2020},
 author = {Caldarola, Debora and Mancini, Massimiliano and Galasso, Fabio and Ciccone, Marco and Rodolà, Emanuele and Caputo, Barbara},
 title = {Cluster-driven Graph Federated Learning over Multiple Domains},
 booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
-month = {June},
 year = {2021},
   preview={federated-2021.png},
   html={},  
@@ -213,7 +206,6 @@ year = {2021},
 author={Fontanel, Dario and Cermelli, Fabio and Mancini, Massimiliano and Caputo, Barbara},
 title = {Detecting Anomalies in Semantic Segmentation with Prototypes},
 booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
-month = {June},
 year = {2021},
   preview={anomaly2021.png},
   html={},  
