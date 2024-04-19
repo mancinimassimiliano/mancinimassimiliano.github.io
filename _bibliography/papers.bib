@@ -193,11 +193,10 @@ title = {Cluster-driven Graph Federated Learning over Multiple Domains},
 booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
 year = {2021},
   preview={federated-2021.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://openaccess.thecvf.com/content/CVPR2021W/LLID/html/Caldarola_Cluster-Driven_Graph_Federated_Learning_Over_Multiple_Domains_CVPRW_2021_paper.html},  
+  pdf={https://openaccess.thecvf.com/content/CVPR2021W/LLID/papers/Caldarola_Cluster-Driven_Graph_Federated_Learning_Over_Multiple_Domains_CVPRW_2021_paper.pdf},
   selected={false},
-  abstract={}
+  abstract={Federated Learning (FL) deals with learning a central model (ie the server) in privacy-constrained scenarios, where data are stored on multiple devices (ie the clients). The central model has no direct access to the data, but only to the updates of the parameters computed locally by each client. This raises a problem, known as statistical heterogeneity, because the clients may have different data distributions (ie domains). This is only partly alleviated by clustering the clients. Clustering may reduce heterogeneity by identifying the domains, but it deprives each cluster model of the data and supervision of others. Here we propose a novel Cluster-driven Graph Federated Learning (FedCG). In FedCG, clustering serves to address statistical heterogeneity, while Graph Convolutional Networks (GCNs) enable sharing knowledge across them. FedCG: i) identifies the domains via an FL-compliant clustering and instantiates domain-specific modules (residual branches) for each domain; ii) connects the domain-specific modules through a GCN at training to learn the interactions among domains and share knowledge; and iii) learns to cluster unsupervised via teacher-student classifier-training iterations and to address novel unseen test domains via their domain soft-assignment scores. Thanks to the unique interplay of GCN over clusters, FedCG achieves the state-of-the-art on multiple FL benchmarks.}
 }
 
 
@@ -208,11 +207,11 @@ title = {Detecting Anomalies in Semantic Segmentation with Prototypes},
 booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
 year = {2021},
   preview={anomaly2021.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://openaccess.thecvf.com/content/CVPR2021W/SAIAD/html/Fontanel_Detecting_Anomalies_in_Semantic_Segmentation_With_Prototypes_CVPRW_2021_paper.html},  
+  pdf={https://openaccess.thecvf.com/content/CVPR2021W/SAIAD/papers/Fontanel_Detecting_Anomalies_in_Semantic_Segmentation_With_Prototypes_CVPRW_2021_paper.pdf},
+  code={https://github.com/DarioFontanel/PAnS},   
   selected={false},
-  abstract={}
+  abstract={Traditional semantic segmentation methods can recognize at test time only the classes that are present in the training set. This is a significant limitation, especially for semantic segmentation algorithms mounted on intelligent autonomous systems, deployed in realistic settings. Regardless of how many classes the system has seen at training time, it is inevitable that unexpected, unknown objects will appear at test time. The failure in identifying such anomalies may lead to incorrect, even dangerous behaviors of the autonomous agent equipped with such segmentation model when deployed in the real world. Current state of the art of anomaly segmentation uses generative models, exploiting their incapability to reconstruct patterns unseen during training. However, training these models is expensive, and their generated artifacts may create false anomalies. In this paper we take a different route and we propose to address anomaly segmentation through prototype learning. Our intuition is that anomalous pixels are those that are dissimilar to all class prototypes known by the model. We extract class prototypes from the training data in a lightweight manner using a cosine similarity-based classifier. Experiments on StreetHazards show that our approach achieves the new state of the art, with a significant margin over previous works, despite the reduced computational overhead.}
 }
 
 
@@ -221,14 +220,13 @@ year = {2021},
 author = {Pastore, Giuseppe and Cermelli, Fabio and Xian, Yongqin and Mancini, Massimiliano and Akata, Zeynep and Caputo, Barbara},
 title = {A Closer Look at Self-training for Zero-Label Semantic Segmentation},
 booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
-month = {June},
 year = {2021},
   preview={zsl2021.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://openaccess.thecvf.com/content/CVPR2021W/LLID/html/Pastore_A_Closer_Look_at_Self-Training_for_Zero-Label_Semantic_Segmentation_CVPRW_2021_paper.html},  
+  pdf={https://openaccess.thecvf.com/content/CVPR2021W/LLID/papers/Pastore_A_Closer_Look_at_Self-Training_for_Zero-Label_Semantic_Segmentation_CVPRW_2021_paper.pdf},
+  code={https://github.com/giuseppepastore10/STRICT},   
   selected={false},
-  abstract={}
+  abstract={Being able to segment unseen classes not observed during training is an important technical challenge in deep learning, because of its potential to reduce the expensive annotation required for semantic segmentation. Prior zero-label semantic segmentation works approach this task by learning visual-semantic embeddings or generative models. However, they are prone to overfitting on the seen classes because there is no training signal for them. In this paper, we study the challenging generalized zero-label semantic segmentation task where the model has to segment both seen and unseen classes at test time. We assume that pixels of unseen classes could be present in the training images but without being annotated. Our idea is to capture the latent information on unseen classes by supervising the model with self-produced pseudo-labels for unlabeled pixels. We propose a consistency regularizer to filter out noisy pseudo-labels by taking the intersections of the pseudo-labels generated from different augmentations of the same image. Our framework generates pseudo-labels and then retrain the model with human-annotated and pseudo-labelled data. This procedure is repeated for several iterations. As a result, our approach achieves the new state-of-the-art on PascalVOC12 and COCO-stuff datasets in the challenging generalized zero-label semantic segmentation setting, surpassing other existing methods addressing this task with more complex strategies.}
 }
 
 
@@ -239,11 +237,11 @@ title={Towards Recognizing Unseen Categories in Unseen Domains},
 booktitle={Proceedings of the European Conference on Computer Vision (ECCV) 2020},
 year={2020},
   preview={eccv2020.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://link.springer.com/chapter/10.1007/978-3-030-58592-1_28},  
+  pdf={https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123680460.pdf},
+  code={https://github.com/mancinimassimiliano/CuMix},   
   selected={true},
-  abstract={}
+  abstract={Current deep visual recognition systems suffer from severe performance degradation when they encounter new images from classes and scenarios unseen during training. Hence, the core challenge of Zero-Shot Learning (ZSL) is to cope with the semantic-shift whereas the main challenge of Domain Adaptation and Domain Generalization (DG) is the domain-shift. While historically ZSL and DG tasks are tackled in isolation, this work develops with the ambitious goal of solving them jointly, i.e. by recognizing unseen visual concepts in unseen domains. We present CuMix (Curriculum Mixup for recognizing unseen categories in unseen domains), a holistic algorithm to tackle ZSL, DG and ZSL+DG. The key idea of CuMix is to simulate the test-time domain and semantic shift using images and features from unseen domains and categories generated by mixing up the multiple source domains and categories available during training. Moreover, a curriculum-based mixing policy is devised to generate increasingly complex training samples. Results on standard ZSL and DG datasets and on ZSL+DG using the DomainNet benchmark demonstrate the effectiveness of our approach.}
 }
 
 @inproceedings{alaniz2022abstracting,
@@ -253,11 +251,11 @@ year={2020},
   booktitle="Proceedings of the European Conference on Computer Vision (ECCV) 2022",
   year={2022},
   preview={PMN_teaser.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://link.springer.com/chapter/10.1007/978-3-031-19818-2_23},  
+  pdf={https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136890392.pdf},
+  code={https://github.com/ExplainableML/sketch-primitives},   
   selected={false},
-  abstract={}
+  abstract={Humans show high-level of abstraction capabilities in games that require quickly communicating object information. They decompose the message content into multiple parts and communicate them in an interpretable protocol. Toward equipping machines with such capabilities, we propose the Primitive-based Sketch Abstraction task where the goal is to represent sketches using a fixed set of drawing primitives under the influence of a budget. To solve this task, our PrimitiveMatching Network (PMN), learns interpretable abstractions of a sketch in a self supervised manner. Specifically, PMN maps each stroke of a sketch to its most similar primitive in a given set, predicting an affine transformation that aligns the selected primitive to the target stroke. We learn this stroke-to-primitive mapping end-to-end with a distancetransform loss that is minimal when the original sketch is precisely reconstructed with the predicted primitives. Our PMN abstraction empirically achieves the highest performance on sketch recognition and sketch-based image retrieval given a communication budget, while at the same time being highly interpretable. This opens up new possibilities for sketch analysis, such as comparing sketches by extracting the most relevant primitives that define an object category.}
 }
 
 
@@ -268,11 +266,11 @@ year={2020},
   booktitle="Proceedings of the European Conference on Computer Vision (ECCV) 2022",
   year={2022},
   preview={BayesCap.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://www.eml-unitue.de/publication/BayesCap},  
+  pdf={https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136720295.pdf},
+  code={https://github.com/ExplainableML/BayesCap},   
   selected={false},
-  abstract={}
+  abstract={High-quality calibrated uncertainty estimates are crucial for numerous real-world applications, especially for deep learning-based deployed ML systems. While Bayesian deep learning techniques allow uncertainty estimation, training them with large-scale datasets is an expensive process that does not always yield models competitive with non-Bayesian counterparts. Moreover, many of the high-performing deep learning models that are already trained and deployed are non-Bayesian in nature and do not provide uncertainty estimates. To address these issues, we propose BayesCap that learns a Bayesian identity mapping for the frozen model, allowing uncertainty estimation. BayesCap is a memory-efficient method that can be trained on a small fraction of the original dataset, enhancing pretrained non-Bayesian computer vision models by providing calibrated uncertainty estimates for the predictions without (i) hampering the performance of the model and (ii) the need for expensive retraining the model from scratch. The proposed method is agnostic to various architectures and tasks. We show the efficacy of our method on a wide variety of tasks with a diverse set of architectures, including image super-resolution, deblurring, inpainting, and crucial application such as medical image translation. Moreover, we apply the derived uncertainty estimates to detect out-of-distribution samples in critical scenarios like depth estimation in autonomous driving.}
 }
 
 
@@ -283,11 +281,11 @@ year={2020},
   booktitle="Proceedings of the International Conference on Computer Vision (ICCV) 2023",
   year={2023},
   preview={ICIS_teaser.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://openaccess.thecvf.com/content/ICCV2023/html/Christensen_Image-Free_Classifier_Injection_for_Zero-Shot_Classification_ICCV_2023_paper},  
+  pdf={https://openaccess.thecvf.com/content/ICCV2023/papers/Christensen_Image-Free_Classifier_Injection_for_Zero-Shot_Classification_ICCV_2023_paper.pdf},
+  code={https://github.com/ExplainableML/ImageFreeZSL},   
   selected={false},
-  abstract={}
+  abstract={Zero-shot learning models achieve remarkable results on image classification for samples from classes that were not seen during training. However, such models must be trained from scratch with specialised methods: therefore, access to a training dataset is required when the need for zero-shot classification arises. In this paper, we aim to equip pre-trained models with zero-shot classification capabilities without the use of image data. We achieve this with our proposed Image-free Classifier Injection with Semantics (ICIS) that injects classifiers for new, unseen classes into pre-trained classification models in a post-hoc fashion without relying on image data. Instead, the existing classifier weights and simple class-wise descriptors, such as class names or attributes, are used. ICIS has two encoder-decoder networks that learn to reconstruct classifier weights from descriptors (and vice versa), exploiting (cross-)reconstruction and cosine losses to regularise the decoding process. Notably, ICIS can be cheaply trained and applied directly on top of pre-trained classification models. Experiments on benchmark ZSL datasets show that ICIS produces unseen classifier weights that achieve strong (generalised) zero-shot classification performance.}
 }
 
 
@@ -298,12 +296,10 @@ year={2020},
   booktitle="Proceedings of the International Conference on Computer Vision (ICCV) 2023",
   year={2023},
   preview={isco_teaser.png},
-  html={},  
-  pdf={},
+  html={https://openaccess.thecvf.com/content/ICCV2023/html/Alaniz_Iterative_Superquadric_Recomposition_of_3D_Objects_from_Multiple_Views_ICCV_2023_paper.html},  
+  pdf={https://openaccess.thecvf.com/content/ICCV2023/papers/Alaniz_Iterative_Superquadric_Recomposition_of_3D_Objects_from_Multiple_Views_ICCV_2023_paper.pdf},
   code={https://github.com/ExplainableML/ISCO},   
-  selected={false},
-  abstract={}
-}
+  selected={false},  abstract={Humans are good at recomposing novel objects, i.e they can identify commonalities between unknown objects from general structure to finer detail, an ability difficult to replicate by machines. We propose a framework, ISCO, to recompose an object using 3D superquadrics as semantic parts directly from 2D views without training a model that uses 3D supervision. To achieve this, we optimize the superquadric parameters that compose a specific instance of the object, comparing its rendered 3D view and 2D image silhouette. Our ISCO framework iteratively adds new superquadrics wherever the reconstruction error is high, abstracting first coarse regions and then finer details of the target object. With this simple coarse-to-fine inductive bias, ISCO provides consistent superquadrics for related object parts, despite not having any semantic supervision. Since ISCO does not train any neural network, it is also inherently robust to out of distribution objects. Experiments show that, compared to recent single instance superquadrics reconstruction approaches, ISCO provides consistently more accurate 3D reconstructions, even from images in the wild.}
 
 
 @inproceedings{vanderklis2023pdisconet,
@@ -313,11 +309,11 @@ year={2020},
   booktitle="Proceedings of the International Conference on Computer Vision (ICCV) 2023",
   year={2023},
   preview={PDISCO_teaser.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://openaccess.thecvf.com/content/ICCV2023/html/van_der_Klis_PDiscoNet_Semantically_consistent_part_discovery_for_fine-grained_recognition_ICCV_2023_paper.html},  
+  pdf={https://openaccess.thecvf.com/content/ICCV2023/papers/van_der_Klis_PDiscoNet_Semantically_consistent_part_discovery_for_fine-grained_recognition_ICCV_2023_paper.pdf},
+  code={https://github.com/robertdvdk/part_detection},   
   selected={false},
-  abstract={}
+  abstract={Fine-grained classification often requires recognizing specific object parts, such as beak shape and wing patterns for birds. Encouraging a fine-grained classification model to first detect such parts and then using them to infer the class could help us gauge whether the model is indeed looking at the right details better than with interpretability methods that provide a single attribution map. We propose PDiscoNet to discover object parts by using only image-level class labels along with priors encouraging the parts to be: discriminative, compact, distinct from each other, equivariant to rigid transforms, and active in at least some of the images. In addition to using the appropriate losses to encode these priors, we propose to use part-dropout, where full part feature vectors are dropped at once to prevent a single part from dominating in the classification, and part feature vector modulation, which makes the information coming from each part distinct from the perspective of the classifier. Our results on CUB, CelebA, and PartImageNet show that the proposed method provides substantially better part discovery performance than previous methods while not requiring any additional hyper-parameter tuning and without penalizing the classification performance.}
 }
 
 @inproceedings{upadhyay2023probvlm,
@@ -327,11 +323,11 @@ year={2020},
   booktitle="Proceedings of the International Conference on Computer Vision (ICCV) 2023",
   year={2023},
   preview={ProbVLM_teaser.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://openaccess.thecvf.com/content/ICCV2023/html/Upadhyay_ProbVLM_Probabilistic_Adapter_for_Frozen_Vison-Language_Models_ICCV_2023_paper.html},  
+  pdf={https://openaccess.thecvf.com/content/ICCV2023/papers/Upadhyay_ProbVLM_Probabilistic_Adapter_for_Frozen_Vison-Language_Models_ICCV_2023_paper.pdf},
+  code={https://github.com/ExplainableML/ProbVLM},   
   selected={false},
-  abstract={}
+  abstract={Large-scale vision-language models (VLMs) like CLIP successfully find correspondences between images and text. Through the standard deterministic mapping process, an image or a text sample is mapped to a single vector in the embedding space. This is problematic: as multiple samples (images or text) can abstract the same concept in the physical world, deterministic embeddings do not reflect the inherent ambiguity in the embedding space. We propose ProbVLM, a probabilistic adapter that estimates probability distributions for the embeddings of pre-trained VLMs via inter/intra-modal alignment in a post-hoc manner without needing large-scale datasets or computing. On four challenging datasets, i.e., COCO, Flickr, CUB, and Oxford-flowers, we estimate the multi-modal embedding uncertainties for two VLMs, i.e., CLIP and BLIP, quantify the calibration of embedding uncertainties in retrieval tasks and show that ProbVLM outperforms other methods. Furthermore, we propose active learning and model selection as two real-world downstream tasks for VLMs and show that the estimated uncertainty aids both tasks. Lastly, we present a novel technique for visualizing the embedding distributions using a large-scale pre-trained latent diffusion model.}
 }
 
 @inproceedings{demin2023effectiveness,
@@ -340,12 +336,12 @@ year={2020},
   author={De Min, Thomas and Mancini, Massimiliano and Alahari, Karteek and Alameda-Pineda, Xavier and Ricci, Elisa},
   booktitle="The First Workshop on Visual Continual Learning at ICCV 2023",
   year={2023},
-  preview={PDISCO_teaser.png},
-  html={},  
-  pdf={},
-  code={},   
+  preview={demin_iccvws23.png},
+  html={https://ieeexplore.ieee.org/abstract/document/10350917/},  
+  pdf={https://arxiv.org/pdf/2308.09610.pdf},
+  code={https://github.com/tdemin16/Continual-LayerNorm-Tuning},   
   selected={false},
-  abstract={}
+  abstract={State-of-the-art rehearsal-free continual learning methods exploit the peculiarities of Vision Transformers to learn task-specific prompts, drastically reducing catastrophic forgetting. However, there is a tradeoff between the number of learned parameters and the performance, making such models computationally expensive. In this work, we aim to reduce this cost while maintaining competitive performance. We achieve this by revisiting and extending a simple transfer learning idea: learning task-specific normalization layers. Specifically, we tune the scale and bias parameters of LayerNorm for each continual learning task, selecting them at inference time based on the similarity between task-specific keys and the output of the pre-trained model. To make the classifier robust to incorrect selection of parameters during inference, we introduce a two-stage training procedure, where we first optimize the task-specific parameters and then train the classifier with the same selection procedure of the inference time. Experiments on ImageNet-R and CIFAR-100 show that our method achieves results that are either superior or on par with the state of the art while being computationally cheaper.}
 }
 
 
@@ -355,13 +351,10 @@ title={Discovering Latent Domains for Unsupervised Domain Adaptation Through Con
 author={Mancini, Massimiliano and Porzi, Lorenzo and Cermelli, Fabio and Caputo, Barbara},
 booktitle = {International Conference on Image Analysis and Processing (ICIAP)},
 year = {2019},
-month = {September},
   preview={iciap2019.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://link.springer.com/chapter/10.1007/978-3-030-30645-8_36},  
   selected={false},
-  abstract={}
+  abstract={In recent years, great advances in Domain Adaptation (DA) have been possible through deep neural networks. While this is true even for multi-source scenarios, most of the methods are based on the assumption that the domain to which each sample belongs is known a priori. However, in practice, we might have a source domain composed by a mixture of multiple sub-domains, without any prior about the sub-domain to which each source sample belongs. In this case, while multi-source DA methods are not applicable, restoring to single-source ones may lead to sub-optimal results. In this work, we explore a recent direction in deep domain adaptation: automatically discovering latent domains in visual datasets. Previous works address this problem by using a domain prediction branch, trained with an entropy loss. Here we present a novel formulation for training the domain prediction branch which exploits (i) domain prediction output for various perturbations of the input features and (ii) the min-entropy consensus loss, which forces the predictions of the perturbation to be both consistent and with low entropy. We compare our approach to the previous state-of-the-art on publicly-available datasets, showing the effectiveness of our method both quantitatively and qualitatively.}
 }
 
 
@@ -373,11 +366,10 @@ month = {September},
   	year      = {2018},
   	month     = {October},
   preview={icip2018.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://ieeexplore.ieee.org/abstract/document/8451318/},  
+  pdf={https://arxiv.org/pdf/1806.05810},   
   selected={false},
-  abstract={}
+  abstract={A long standing problem in visual object categorization is the ability of algorithms to generalize across different testing conditions. The problem has been formalized as a covariate shift among the probability distributions generating the training data (source) and the test data (target) and several domain adaptation methods have been proposed to address this issue. While these approaches have considered the single source-single target scenario, it is plausible to have multiple sources and require adaptation to any possible target domain. This last scenario, named Domain Generalization (DG), is the focus of our work. Differently from previous DG methods which learn domain invariant representations from source data, we design a deep network with multiple domain-specific classifiers, each associated to a source domain. At test time we estimate the probabilities that a target sample belongs to each source domain and exploit them to optimally fuse the classifiers predictions. To further improve the generalization ability of our model, we also introduced a domain agnostic component supporting the final classifier. Experiments on two public benchmarks demonstrate the power of our approach.}
 }
 
 
@@ -389,11 +381,10 @@ month = {September},
   year={2021},
   pages={8037-8044},
   preview={icpr2020.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://ieeexplore.ieee.org/abstract/document/9411982/},  
+  pdf={https://arxiv.org/pdf/2008.01589.pdf},
   selected={false},
-  abstract={}
+  abstract={Recent unsupervised domain adaptation methods based on deep architectures have shown remarkable performance not only in traditional classification tasks but also in more complex problems involving structured predictions (e.g. semantic segmentation, depth estimation). Following this trend, in this paper we present a novel deep adaptation framework for estimating keypoints under domain shift, i.e, when the training (source) and the test (target) images significantly differ in terms of visual appearance. Our method seamlessly combines three different components: feature alignment, adversarial training and self-supervision. Specifically, our deep architecture leverages from domain-specific distribution alignment layers to perform target adaptation at the feature level. Furthermore, a novel loss is proposed which combines an adversarial term for ensuring aligned predictions in the output space and a geometric consistency term which guarantees coherent predictions between a target sample and its perturbed version. Our extensive experimental evaluation conducted on three publicly available benchmarks shows that our approach outperforms state-of-the-art domain adaptation methods in the 2D keypoint prediction task.}
 }
 
 
@@ -405,11 +396,10 @@ month = {September},
   	year      = {2019},
   	month     = {May},
   preview={icra2019.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://ieeexplore.ieee.org/abstract/document/8793803/},  
+  pdf={https://arxiv.org/pdf/1906.01258},  
   selected={false},
-  abstract={}
+  abstract={While today's robots are able to perform sophisticated tasks, they can only act on objects they have been trained to recognize. This is a severe limitation: any robot will inevitably see new objects in unconstrained settings, and thus will always have visual knowledge gaps. However, standard visual modules are usually built on a limited set of classes and are based on the strong prior that an object must belong to one of those classes. Identifying whether an instance does not belong to the set of known categories (i.e. open set recognition), only partially tackles this problem, as a truly autonomous agent should be able not only to detect what it does not know, but also to extend dynamically its knowledge about the world. We contribute to this challenge with a deep learning architecture that can dynamically update its known classes in an end-to-end fashion. The proposed deep network, based on a deep extension of a non-parametric model, detects whether a perceived object belongs to the set of categories known by the system and learns it without the need to retrain the whole system from scratch. Annotated images about the new category can be provided by an `oracle' (i.e. human supervision), or by autonomous mining of the Web. Experiments on two different databases and on a robot platform demonstrate the promise of our approach.}
 }
 
 
@@ -421,11 +411,11 @@ month = {September},
   	year      = {2018},
   	month     = {October},
   preview={iros2018.png},
-  html={},  
-  pdf={},
+  html={https://ieeexplore.ieee.org/abstract/document/8593862/},  
+  pdf={https://arxiv.org/pdf/1807.01028.pdf},
   code={},   
   selected={false},
-  abstract={}
+  abstract={Technological developments call for increasing perception and action capabilities of robots. Among other skills, vision systems that can adapt to any possible change in the working conditions are needed. Since these conditions are unpredictable, we need benchmarks which allow to assess the generalization and robustness capabilities of our visual recognition algorithms. In this work we focus on robotic kitting in unconstrained scenarios. As a first contribution, we present a new visual dataset for the kitting task. Differently from standard object recognition datasets, we provide images of the same objects acquired under various conditions where camera, illumination and background are changed. This novel dataset allows for testing the robustness of robot visual recognition algorithms to a series of different domain shifts both in isolation and unified. Our second contribution is a novel online adaptation algorithm for deep models, based on batch-normalization layers, which allows to continuously adapt a model to the current working conditions. Differently from standard domain adaptation algorithms, it does not require any image from the target domain at training time. We benchmark the performance of the algorithm on the proposed dataset, showing its capability to fill the gap between the performances of a standard architecture and its counterpart adapted offline to the given target domain.}
 }
 
 
@@ -440,11 +430,10 @@ month = {September},
   year={2020},
   publisher={Springer},
   preview={mva2020.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://arxiv.org/abs/2103.13894},  
+  pdf={https://arxiv.org/pdf/2103.13894.pdf},
   selected={false},
-  abstract={}
+  abstract={In this work, we present a new, algorithm for multi-domain learning. Given a pretrained architecture and a set of visual domains received sequentially, the goal of multi-domain learning is to produce a single model performing a task in all the domains together. Recent works showed how we can address this problem by masking the internal weights of a given original conv-net through learned binary variables. In this work, we provide a general formulation of binary mask based models for multi-domain learning by affine transformations of the original network parameters. Our formulation obtains significantly higher levels of adaptation to new domains, achieving performances comparable to domain-specific models while requiring slightly more than 1 bit per network parameter per additional domain. Experiments on two popular benchmarks showcase the power of our approach, achieving performances close to state-of-the-art methods on the Visual Decathlon Challenge.}
 }
 
 
@@ -455,11 +444,11 @@ month = {September},
   journal={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2022},
   preview={neurips2022.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://proceedings.neurips.cc/paper_files/paper/2022/hash/c9f95e9ec39fa5ad3d0a562b993b92aa-Abstract-Conference.html},  
+  pdf={https://proceedings.neurips.cc/paper_files/paper/2022/file/c9f95e9ec39fa5ad3d0a562b993b92aa-Paper-Conference.pdf},
+  code={https://github. com/abhrac/relational-proxies.},   
   selected={false},
-  abstract={}
+  abstract={Fine-grained categories that largely share the same set of parts cannot be discriminated based on part information alone, as they mostly differ in the way the local parts relate to the overall global structure of the object. We propose Relational Proxies, a novel approach that leverages the relational information between the global and local views of an object for encoding its semantic label. Starting with a rigorous formalization of the notion of distinguishability between fine-grained categories, we prove the necessary and sufficient conditions that a model must satisfy in order to learn the underlying decision boundaries in the fine-grained setting. We design Relational Proxies based on our theoretical findings and evaluate it on seven challenging fine-grained benchmark datasets and achieve state-of-the-art results on all of them, surpassing the performance of all existing works with a margin exceeding 4% in some cases. We also experimentally validate our theory on fine-grained distinguishability and obtain consistent results across multiple benchmarks.}
 }
 
 
@@ -474,12 +463,13 @@ month = {September},
   pages={485-498},
   doi={10.1109/TPAMI.2019.2933829},
   preview={pami2019.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://ieeexplore.ieee.org/abstract/document/8792192/},  
+  pdf={https://www.arxiv.org/pdf/2103.13873},
+  code={https://github.com/mancinimassimiliano/latent_domains_DA},   
   selected={false},
-  abstract={}
+  abstract={Unsupervised Domain Adaptation (UDA) refers to the problem of learning a model in a target domain where labeled data are not available by leveraging information from annotated data in a source domain. Most deep UDA approaches operate in a single-source, single-target scenario, i.e., they assume that the source and the target samples arise from a single distribution. However, in practice most datasets can be regarded as mixtures of multiple domains. In these cases, exploiting traditional single-source, single-target methods for learning classification models may lead to poor results. Furthermore, it is often difficult to provide the domain labels for all data points, i.e. latent domains should be automatically discovered. This paper introduces a novel deep architecture which addresses the problem of UDA by automatically discovering latent domains in visual datasets and exploiting this information to learn robust target classifiers. Specifically, our architecture is based on two main components, i.e. a side branch that automatically computes the assignment of each sample to its latent domain and novel layers that exploit domain membership information to appropriately align the distribution of the CNN internal feature representations to a reference distribution. We evaluate our approach on publicly available benchmarks, showing that it outperforms state-of-the-art domain adaptation methods.}
 }
+
 
 
 @article{cermelli2021modeling,
@@ -490,11 +480,11 @@ month = {September},
   year={2021},
   publisher={IEEE},
   preview={pami2021.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://ieeexplore.ieee.org/abstract/document/9645239/},  
+  pdf={https://arxiv.org/pdf/2201.13338.pdf},
+  code={https://github.com/fcdl94/MiB},   
   selected={false},
-  abstract={}
+  abstract={Deep neural networks have enabled major progresses in semantic segmentation. However, even the most advanced neural architectures suffer from important limitations. First, they are vulnerable to catastrophic forgetting, i.e., they perform poorly when they are required to incrementally update their model as new classes are available. Second, they rely on large amount of pixel-level annotations to produce accurate segmentation maps. To tackle these issues, we introduce a novel incremental class learning approach for semantic segmentation taking into account a peculiar aspect of this task: since each training step provides annotation only for a subset of all possible classes, pixels of the background class exhibit a semantic shift. Therefore, we revisit the traditional distillation paradigm by designing novel loss terms which explicitly account for the background shift. Additionally, we introduce a novel strategy to initialize classifier's parameters at each step in order to prevent biased predictions toward the background class. Finally, we demonstrate that our approach can be extended to point- and scribble-based weakly supervised segmentation, modeling the partial annotations to create priors for unlabeled pixels. We demonstrate the effectiveness of our approach with an extensive evaluation on the Pascal-VOC, ADE20K, and Cityscapes datasets, significantly outperforming state-of-the-art methods.}
 }
 
 
@@ -510,11 +500,11 @@ month = {September},
 	doi={10.1109/LRA.2017.2705282},
 	month={July},
   preview={learning-deep-nbnn.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://ieeexplore.ieee.org/abstract/document/7930504},  
+  pdf={https://www.arxiv.org/pdf/1702.07898},
+  code={https://github.com/mancinimassimiliano/deep_nbnn},   
   selected={false},
-  abstract={}
+  abstract={This paper presents an approach for semantic place categorization using data obtained from RGB cameras. Previous studies on visual place recognition and classification have shown that, by considering features derived from pre-trained Convolutional Neural Networks (CNNs) in combination with part-based classification models, high recognition accuracy can be achieved, even in presence of occlusions and severe viewpoint changes. Inspired by these works, we propose to exploit local deep representations, representing images as set of regions applying a Naïve Bayes Nearest Neighbor (NBNN) model for image classification. As opposed to previous methods where CNNs are merely used as feature extractors, our approach seamlessly integrates the NBNN model into a fully-convolutional neural network. Experimental results show that the proposed algorithm outperforms previous methods based on pre-trained CNN models and that, when employed in challenging robot place recognition tasks, it is robust to occlusions, environmental and sensor changes.}
 }
 
 
@@ -530,11 +520,10 @@ month = {September},
 	doi={10.1109/LRA.2018.2809700},
 	month={July},
   preview={deep-domain-generalization.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://ieeexplore.ieee.org/iel7/7083369/7339444/08302933.pdf},  
+  pdf={https://arxiv.org/pdf/1805.12048},
   selected={false},
-  abstract={}
+  abstract={Traditional place categorization approaches in robot vision assume that training and test images have similar visual appearance. Therefore, any seasonal, illumination and environmental changes typically lead to severe degradation in performance. To cope with this problem, recent works have proposed to adopt domain adaptation techniques. While effective, these methods assume that some prior information about the scenario where the robot will operate is available at training time. Unfortunately, in many cases this assumption does not hold, as we often do not know where a robot will be deployed. To overcome this issue, in this paper we present an approach which aims at learning classification models able to generalize to unseen scenarios. Specifically, we propose a novel deep learning framework for domain generalization. Our method develops from the intuition that, given a set of different classification models associated to known domains (e.g. corresponding to multiple environments, robots), the best model for a new sample in the novel domain can be computed directly at test time by optimally combining the known models. To implement our idea, we exploit recent advances in deep domain adaptation and design a Convolutional Neural Network architecture with novel layers performing a weighted version of Batch Normalization. Our experiments, conducted on three common datasets for robot place categorization, confirm the validity of our contribution.}
 }
 
 
@@ -548,11 +537,10 @@ month = {September},
   number={4},
   pages={5985-5992},
   preview={ral2020.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://ieeexplore.ieee.org/abstract/document/9145605},  
+  pdf={https://arxiv.org/pdf/2004.13849},
   selected={false},
-  abstract={}
+  abstract={While convolutional neural networks have brought significant advances in robot vision, their ability is often limited to closed world scenarios, where the number of semantic concepts to be recognized is determined by the available training set. Since it is practically impossible to capture all possible semantic concepts present in the real world in a single training set, we need to break the closed world assumption, equipping our robot with the capability to act in an open world. To provide such ability, a robot vision system should be able to (i) identify whether an instance does not belong to the set of known categories (i.e. open set recognition), and (ii) extend its knowledge to learn new classes over time (i.e. incremental learning). In this work, we show how we can boost the performance of deep open world recognition algorithms by means of a new loss formulation enforcing a global to local clustering of class-specific features. In particular, a first loss term, i.e. global clustering, forces the network to map samples closer to the class centroid they belong to while the second one, local clustering, shapes the representation space in such a way that samples of the same class get closer in the representation space while pushing away neighbours belonging to other classes. Moreover, we propose a strategy to learn class-specific rejection thresholds, instead of heuristically estimating a single global threshold, as in previous works. Experiments on RGB-D Object and Core50 datasets show the effectiveness of our approach.}
 }
 
 
@@ -566,11 +554,11 @@ month = {September},
   number={2},
   pages={604-611},
   preview={ral2021.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://ieeexplore.ieee.org/abstract/document/9309407},  
+  pdf={https://arxiv.org/pdf/2107.04461},
+  code={https://github.com/DarioFontanel/OWR-VisualDomains},   
   selected={false},
-  abstract={}
+  abstract={Robotic visual systems operating in the wild must act in unconstrained scenarios, under different environmental conditions while facing a variety of semantic concepts, including unknown ones. To this end, recent works tried to empower visual object recognition methods with the capability to i) detect unseen concepts and ii) extended their knowledge over time, as images of new semantic classes arrive. This setting, called Open World Recognition (OWR), has the goal to produce systems capable of breaking the semantic limits present in the initial training set. However, this training set imposes to the system not only its own semantic limits, but also environmental ones, due to its bias toward certain acquisition conditions that do not necessarily reflect the high variability of the real-world. This discrepancy between training and test distribution is called domain-shift. This work investigates whether OWR algorithms are effective under domain-shift, presenting the first benchmark setup for assessing fairly the performances of OWR algorithms, with and without domain-shift. We then use this benchmark to conduct analyses in various scenarios, showing how existing OWR algorithms indeed suffer a severe performance degradation when train and test distributions differ. Our analysis shows that this degradation is only slightly mitigated by coupling OWR with domain generalization techniques, indicating that the mere plug-and-play of existing algorithms is not enough to recognize new and unknown categories in unseen domains. Our results clearly point toward open issues and future research directions, that need to be investigated for building robot visual systems able to function reliably under these challenging yet very real conditions.}
 }
 
 
@@ -583,8 +571,7 @@ month = {September},
   publisher={IEEE},
   preview={survey2022.png},
   html={},  
-  pdf={},
-  code={},   
+  pdf={},   
   selected={false},
   abstract={}
 }
@@ -598,11 +585,11 @@ month = {September},
   pages={100--111},
   year={2017},
   preview={sw2v-img.png},
-  html={},  
-  pdf={},
-  code={},   
+  html={https://aclanthology.org/K17-1012/},  
+  pdf={https://arxiv.org/pdf/1612.02703.pdf%20http://arxiv.org/abs/1612.02703},
+  code={http://lcl.uniroma1.it/sw2v/},   
   selected={false},
-  abstract={}
+  abstract={Word embeddings are widely used in Natural Language Processing, mainly due to their success in capturing semantic information from massive corpora. However, their creation process does not allow the different meanings of a word to be automatically separated, as it conflates them into a single vector. We address this issue by proposing a new model which learns word and sense embeddings jointly. Our model exploits large corpora and knowledge from semantic networks in order to produce a unified vector space of word and sense embeddings. We evaluate the main features of our approach both qualitatively and quantitatively in a variety of tasks, highlighting the advantages of the proposed method in comparison to state-of-the-art word- and sense-based models.}
 }
 
 
