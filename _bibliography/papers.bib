@@ -77,6 +77,102 @@
 }
 
 
+
+
+@inproceedings{demin2024multilane,
+  bibtex_show={true},
+  title={Less is more: Summarizing Patch Tokens for efficient Multi-Label Class-Incremental Learning},
+  author={De Min, Thomas and Mancini, Massimiliano and Lathuilière, Stéphane and Roy, Subhankar and Ricci, Elisa},
+  booktitle={Conference on Lifelong Learning Agents},
+  year={2024},
+  preview={collas2024.png},
+  html={https://arxiv.org/abs/2405.15633},  
+  pdf={https://arxiv.org/pdf/2405.15633.pdf},
+  code={https://github.com/tdemin16/multi-lane},   
+  selected={false},
+  abstract={Prompt tuning has emerged as an effective rehearsal-free technique for class-incremental learning (CIL) that learns a tiny set of task-specific parameters (or prompts) to instruct a pre-trained transformer to learn on a sequence of tasks. Albeit effective, prompt tuning methods do not lend well in the multi-label class incremental learning (MLCIL) scenario (where an image contains multiple foreground classes) due to the ambiguity in selecting the correct prompt(s) corresponding to different foreground objects belonging to multiple tasks. To circumvent this issue we propose to eliminate the prompt selection mechanism by maintaining task-specific pathways, which allow us to learn representations that do not interact with the ones from the other tasks. Since independent pathways in truly incremental scenarios will result in an explosion of computation due to the quadratically complex multi-head self-attention (MSA) operation in prompt tuning, we propose to reduce the original patch token embeddings into summarized tokens. Prompt tuning is then applied to these fewer summarized tokens to compute the final representation. Our proposed method Multi-Label class incremental learning via summarising pAtch tokeN Embeddings (MULTI-LANE) enables learning disentangled task-specific representations in MLCIL while ensuring fast inference. We conduct experiments in common benchmarks and demonstrate that our MULTI-LANE achieves a new state-of-the-art in MLCIL. Additionally, we show that MULTI-LANE is also competitive in the CIL setting.}
+}
+
+
+
+@article{dinca2024openbias,
+  bibtex_show={true},
+  title={OpenBias: Open-set Bias Detection in Text-to-Image Generative Models},
+  author={D'Incà, Moreno and Peruzzo, Elia and Mancini, Massimiliano and Xu, Dejia and Goel, Vidit and Xu, Xingqian and Wang, Zhangyang and Shi, Humphrey and Sebe, Nicu},
+  journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2024},
+  preview={openbias.png},
+  html={https://openaccess.thecvf.com/content/CVPR2024/html/DInca_OpenBias_Open-set_Bias_Detection_in_Text-to-Image_Generative_Models_CVPR_2024_paper.html},  
+  pdf={https://openaccess.thecvf.com/content/CVPR2024/papers/DInca_OpenBias_Open-set_Bias_Detection_in_Text-to-Image_Generative_Models_CVPR_2024_paper.pdf},
+  code={https://github.com/Picsart-AI-Research/OpenBias},   
+  selected={true},
+  abstract={Text-to-image generative models are becoming increasingly popular and accessible to the general public. As these models see large-scale deployments it is necessary to deeply investigate their safety and fairness to not disseminate and perpetuate any kind of biases. However existing works focus on detecting closed sets of biases defined a priori limiting the studies to well-known concepts. In this paper we tackle the challenge of open-set bias detection in text-to-image generative models presenting OpenBias a new pipeline that identifies and quantifies the severity of biases agnostically without access to any precompiled set. OpenBias has three stages. In the first phase we leverage a Large Language Model (LLM) to propose biases given a set of captions. Secondly the target generative model produces images using the same set of captions. Lastly a Vision Question Answering model recognizes the presence and extent of the previously proposed biases. We study the behavior of Stable Diffusion 1.5 2 and XL emphasizing new biases never investigated before. Via quantitative experiments we demonstrate that OpenBias agrees with current closed-set bias detection methods and human judgement.}
+}
+
+@article{zanella2024lavad,
+  bibtex_show={true},
+  title={Harnessing Large Language Models for Training-free Video Anomaly Detection},
+  author={Zanella, Luca and Menapace, Willi and Mancini, Massimiliano and Wang, Yiming and Ricci, Elisa},
+  journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2024},
+  preview={lavad.png},
+  html={https://openaccess.thecvf.com/content/CVPR2024/html/Zanella_Harnessing_Large_Language_Models_for_Training-free_Video_Anomaly_Detection_CVPR_2024_paper.html},  
+  pdf={https://openaccess.thecvf.com/content/CVPR2024/papers/Zanella_Harnessing_Large_Language_Models_for_Training-free_Video_Anomaly_Detection_CVPR_2024_paper.pdf},
+  code={https://lucazanella.github.io/lavad/},   
+  selected={true},
+  abstract={Video anomaly detection (VAD) aims to temporally locate abnormal events in a video. Existing works mostly rely on training deep models to learn the distribution of normality with either video-level supervision one-class supervision or in an unsupervised setting. Training-based methods are prone to be domain-specific thus being costly for practical deployment as any domain change will involve data collection and model training. In this paper we radically depart from previous efforts and propose LAnguage-based VAD (LAVAD) a method tackling VAD in a novel training-free paradigm exploiting the capabilities of pre-trained large language models (LLMs) and existing vision-language models (VLMs). We leverage VLM-based captioning models to generate textual descriptions for each frame of any test video. With the textual scene description we then devise a prompting mechanism to unlock the capability of LLMs in terms of temporal aggregation and anomaly score estimation turning LLMs into an effective video anomaly detector. We further leverage modality-aligned VLMs and propose effective techniques based on cross-modal similarity for cleaning noisy captions and refining the LLM-based anomaly scores. We evaluate LAVAD on two large datasets featuring real-world surveillance scenarios (UCF-Crime and XD-Violence) showing that it outperforms both unsupervised and one-class methods without requiring any training or data collection.}
+}
+
+@article{farina2024multiflow,
+  bibtex_show={true},
+  title={MULTIFLOW: Shifting Towards Task-Agnostic Vision-Language Pruning},
+  author={Farina, Matteo and Mancini, Massimiliano and Cunegatti, Elia and Liu, Gaowen and Iacca, Giovanni and Ricci, Elisa},
+  journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2024},
+  preview={multiflow.png},
+  html={https://openaccess.thecvf.com/content/CVPR2024/html/Farina_MULTIFLOW_Shifting_Towards_Task-Agnostic_Vision-Language_Pruning_CVPR_2024_paper.html},  
+  pdf={https://openaccess.thecvf.com/content/CVPR2024/papers/Farina_MULTIFLOW_Shifting_Towards_Task-Agnostic_Vision-Language_Pruning_CVPR_2024_paper.pdf},
+  code={https://github.com/FarinaMatteo/multiflow},   
+  selected={true},
+  abstract={While excellent in transfer learning Vision-Language models (VLMs) come with high computational costs due to their large number of parameters. To address this issue removing parameters via model pruning is a viable solution. However existing techniques for VLMs are task-specific and thus require pruning the network from scratch for each new task of interest. In this work we explore a new direction: Task-Agnostic Vision-Language Pruning (TA-VLP). Given a pretrained VLM the goal is to find a unique pruned counterpart transferable to multiple unknown downstream tasks. In this challenging setting the transferable representations already encoded in the pretrained model are a key aspect to preserve. Thus we propose Multimodal Flow Pruning (MULTIFLOW) a first gradient-free pruning framework for TA-VLP where: (i) the importance of a parameter is expressed in terms of its magnitude and its information flow by incorporating the saliency of the neurons it connects; and (ii) pruning is driven by the emergent (multimodal) distribution of the VLM parameters after pretraining. We benchmark eight state-of-the-art pruning algorithms in the context of TA-VLP experimenting with two VLMs three vision-language tasks and three pruning ratios. Our experimental results show that MULTIFLOW outperforms recent sophisticated combinatorial competitors in the vast majority of the cases paving the way towards addressing TA-VLP. The code is publicly available at https://github.com/FarinaMatteo/multiflow.}
+}
+
+
+
+
+
+
+@article{chaudhuri2024relational,
+  bibtex_show={true},
+  title={Relational Proxies: Fine-Grained Relationships as Zero-Shot Discriminators},
+  author={Chaudhuri, Abhra and Mancini, Massimiliano and Akata, Zeynep and Dutta, Anjan},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2024},
+  volume={},
+  number={},
+  pages={},
+  doi={10.1109/TPAMI.2024.3408913},
+  preview={rel_pami2024.png},
+  html={https://ieeexplore.ieee.org/abstract/document/10547449},  
+  code={https://github.com/abhrac/relational-proxies},   
+  selected={false},
+  abstract={Visual categories that largely share the same set of local parts cannot be discriminated based on part information alone, as they mostly differ in the way the local parts relate to the overall global structure of the object. We propose Relational Proxies , a novel approach that leverages the relational information between the global and local views of an object for encoding its semantic label, even for categories it has not encountered during training. Starting with a rigorous formalization of the notion of distinguishability between categories that share attributes, we prove the necessary and sufficient conditions that a model must satisfy in order to learn the underlying decision boundaries to tell them apart. We design Relational Proxies based on our theoretical findings and evaluate it on seven challenging fine-grained benchmark datasets and achieve state-of-the-art results on all of them, surpassing the performance of all existing works with a margin exceeding 4% in some cases. We additionally show that Relational Proxies also generalizes to the zero-shot setting, where it can efficiently leverage emergent relationships among attributes and image views to generalize to unseen categories, surpassing current state-of-the-art in both the non-generative and generative settings.}
+}
+
+@inproceedings{Karthik_2024_ICLR,
+  bibtex_show={true},
+    author    = {Karthik, Shyamgopal and Roth, Karsten and Mancini, Massimiliano and Akata, Zeynep},
+    title     = {Vision-by-Language for Training-Free Compositional Image Retrieval},
+    booktitle = {International Conference on Learning Representations (ICLR)},
+    year      = {2024},
+  preview={iclr2024.png},
+  html={https://openreview.net/forum?id=EDPxCjXzSb},
+  pdf={https://openreview.net/pdf?id=EDPxCjXzSb},
+  code={https://github.com/ExplainableML/Vision_by_Language},
+  selected={true},
+  abstract={Given an image and a target modification (e.g an image of the Eiffel tower and the text “without people and at night-time”), Compositional Image Retrieval (CIR) aims to retrieve the relevant target image in a database. While supervised approaches rely on annotating triplets that is costly (i.e. query image, textual modification, and target image), recent research sidesteps this need by using large-scale vision-language models (VLMs), performing Zero-Shot CIR (ZS-CIR). However, state-of-the-art approaches in ZS-CIR still require training task-specific, customized models over large amounts of image-text pairs. In this work, we proposeto tackle CIR in a training-free manner via our Compositional Image Retrieval through Vision-by-Language (CIReVL), a simple, yet human-understandable and scalable pipeline that effectively recombines large-scale VLMs with large language models (LLMs). By captioning the reference image using a pre-trained generative VLM and asking a LLM to recompose the caption based on the textual target modification for subsequent retrieval via e.g. CLIP, we achieve modular language reasoning. In four ZS-CIR benchmarks, we find competitive, in-part state-of-the-art performance - improving over supervised methods Moreover, the modularity of CIReVL offers simple scalability without re-training, allowing us to both investigate scaling laws and bottlenecks for ZS-CIR while easily scaling up to in parts more than double of previously reported results. Finally, we show that CIReVL makes CIR human-understandable by composing image and text in a modular fashion in the language domain, thereby making it intervenable, allowing to post-hoc re-align failure cases. Code will be released upon acceptance.}
+}
+
 @article{conti2023vocabulary,
   bibtex_show={true},
   title={Vocabulary-free Image Classification},
@@ -110,6 +206,12 @@
   abstract={Compositional Zero-Shot learning (CZSL) aims to recognize unseen compositions of state and object visual primitives seen during training. A problem with standard CZSL is the assumption of knowing which unseen compositions will be available at test time. In this work, we overcome this assumption operating on the open world setting, where no limit is imposed on the compositional space at test time, and the search space contains a large number of unseen compositions. To address this problem, we propose a new approach, Compositional Cosine Graph Embeddings (Co-CGE), based on two principles. First, Co-CGE models the dependency between states, objects and their compositions through a graph convolutional neural network. The graph propagates information from seen to unseen concepts, improving their representations. Second, since not all unseen compositions are equally feasible, and less feasible ones may damage the learned representations, Co-CGE estimates a feasibility score for each unseen composition, using the scores as margins in a cosine similarity-based loss and as weights in the adjacency matrix of the graphs. Experiments show that our approach achieves state-of-the-art performances in standard CZSL while outperforming previous methods in the open world scenario.}
  }
 
+
+
+
+
+
+
 @inproceedings{dutta2021concurrent,
   bibtex_show={true},
   title={Concurrent Discrimination and Alignment for Self-Supervised Feature Learning},
@@ -140,6 +242,19 @@
   abstract={Current Domain Adaptation (DA) methods based on deep architectures assume that the source samples arise from a single distribution. However, in practice most datasets can be regarded as mixtures of multiple domains. In these cases exploiting single-source DA methods for learning target classifiers may lead to sub-optimal, if not poor, results. In addition, in many applications it is difficult to manually provide the domain labels for all source data points, ie latent domains should be automatically discovered. This paper introduces a novel Convolutional Neural Network (CNN) architecture which (i) automatically discovers latent domains in visual datasets and (ii) exploits this information to learn robust target classifiers. Our approach is based on the introduction of two main components, which can be embedded into any existing CNN architecture:(i) a side branch that automatically computes the assignment of a source sample to a latent domain and (ii) novel layers that exploit domain membership information to appropriately align the distribution of the CNN internal feature representations to a reference distribution. We test our approach on publicly-available datasets, showing that it outperforms state-of-the-art multi-source DA methods by a large margin.},
 }
 
+@inproceedings{mancini2021open,
+  bibtex_show={true},
+  title={Open World Compositional Zero-Shot Learning},
+  author={Mancini, Massimiliano and Naeem, Muhammad Ferjad and Xian, Yongqin and Akata, Zeynep},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2021},
+  preview={cvpr2021.png},
+  html={https://openaccess.thecvf.com/content/CVPR2021/html/Mancini_Open_World_Compositional_Zero-Shot_Learning_CVPR_2021_paper.html},  
+  pdf={https://openaccess.thecvf.com/content/CVPR2021/papers/Mancini_Open_World_Compositional_Zero-Shot_Learning_CVPR_2021_paper.pdf},
+  code={https://github.com/ExplainableML/czsl},   
+  selected={true},
+  abstract={Compositional Zero-Shot learning (CZSL) requires to recognize state-object compositions unseen during training. In this work, instead of assuming prior knowledge about the unseen compositions, we operate in the open world setting, where the search space includes a large number of unseen compositions some of which might be unfeasible. In this setting, we start from the cosine similarity between visual features and compositional embeddings. After estimating the feasibility score of each composition, we use these scores to either directly mask the output space or as a margin for the cosine similarity between visual features and compositional embeddings during training. Our experiments on two standard CZSL benchmarks show that all the methods suffer severe performance degradation when applied in the open world setting. While our simple CZSL model achieves state-of-the-art performances in the closed world scenario, our feasibility scores boost the performance of our approach in the open world setting, clearly outperforming the previous state of the art.}
+}
 
 @inproceedings{Cermelli_2020_CVPR,
   bibtex_show={true},
@@ -156,19 +271,7 @@ year = {2020},
 }
 
 
-@inproceedings{mancini2021open,
-  bibtex_show={true},
-  title={Open World Compositional Zero-Shot Learning},
-  author={Mancini, Massimiliano and Naeem, Muhammad Ferjad and Xian, Yongqin and Akata, Zeynep},
-  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2021},
-  preview={cvpr2021.png},
-  html={https://openaccess.thecvf.com/content/CVPR2021/html/Mancini_Open_World_Compositional_Zero-Shot_Learning_CVPR_2021_paper.html},  
-  pdf={https://openaccess.thecvf.com/content/CVPR2021/papers/Mancini_Open_World_Compositional_Zero-Shot_Learning_CVPR_2021_paper.pdf},
-  code={https://github.com/ExplainableML/czsl},   
-  selected={true},
-  abstract={Compositional Zero-Shot learning (CZSL) requires to recognize state-object compositions unseen during training. In this work, instead of assuming prior knowledge about the unseen compositions, we operate in the open world setting, where the search space includes a large number of unseen compositions some of which might be unfeasible. In this setting, we start from the cosine similarity between visual features and compositional embeddings. After estimating the feasibility score of each composition, we use these scores to either directly mask the output space or as a margin for the cosine similarity between visual features and compositional embeddings during training. Our experiments on two standard CZSL benchmarks show that all the methods suffer severe performance degradation when applied in the open world setting. While our simple CZSL model achieves state-of-the-art performances in the closed world scenario, our feasibility scores boost the performance of our approach in the open world setting, clearly outperforming the previous state of the art.}
-}
+
 
 
 @inproceedings{Karthik_2022_CVPR,
@@ -184,6 +287,8 @@ year = {2020},
   selected={false},
   abstract={The goal of open-world compositional zero-shot learning (OW-CZSL) is to recognize compositions of state and objects in images, given only a subset of them during training and no prior on the unseen compositions. In this setting, models operate on a huge output space, containing all possible state-object compositions. While previous works tackle the problem by learning embeddings for the compositions jointly, here we revisit a simple CZSL baseline and predict the primitives, ie states and objects, independently. To ensure that the model develops primitive-specific features, we equip the state and object classifiers with separate, non-linear feature extractors. Moreover, we estimate the feasibility of each composition through external knowledge, using this prior to remove unfeasible compositions from the output space. Finally, we propose a new setting, ie CZSL under partial supervision (pCZSL), where either only objects or state labels are available during training and we can use our prior to estimate the missing labels. Our model, Knowledge-Guided Simple Primitives (KG-SP), achieves the state of the art in both OW-CZSL and pCZSL, surpassing most recent competitors even when coupled with semi-supervised learning techniques}
 }
+
+
 
 
 @inproceedings{caldarola2021cluster,
@@ -332,11 +437,12 @@ year={2020},
   abstract={Large-scale vision-language models (VLMs) like CLIP successfully find correspondences between images and text. Through the standard deterministic mapping process, an image or a text sample is mapped to a single vector in the embedding space. This is problematic: as multiple samples (images or text) can abstract the same concept in the physical world, deterministic embeddings do not reflect the inherent ambiguity in the embedding space. We propose ProbVLM, a probabilistic adapter that estimates probability distributions for the embeddings of pre-trained VLMs via inter/intra-modal alignment in a post-hoc manner without needing large-scale datasets or computing. On four challenging datasets, i.e., COCO, Flickr, CUB, and Oxford-flowers, we estimate the multi-modal embedding uncertainties for two VLMs, i.e., CLIP and BLIP, quantify the calibration of embedding uncertainties in retrieval tasks and show that ProbVLM outperforms other methods. Furthermore, we propose active learning and model selection as two real-world downstream tasks for VLMs and show that the estimated uncertainty aids both tasks. Lastly, we present a novel technique for visualizing the embedding distributions using a large-scale pre-trained latent diffusion model.}
 }
 
+
 @inproceedings{demin2023effectiveness,
   bibtex_show={true},
   title={On the Effectiveness of LayerNorm Tuning for Continual Learning in Vision Transformers},
   author={De Min, Thomas and Mancini, Massimiliano and Alahari, Karteek and Alameda-Pineda, Xavier and Ricci, Elisa},
-  booktitle="The First Workshop on Visual Continual Learning at ICCV 2023",
+  booktitle={The First Workshop on Visual Continual Learning at ICCV 2023},
   year={2023},
   preview={demin_iccvws23.png},
   html={https://ieeexplore.ieee.org/abstract/document/10350917/},  
@@ -345,7 +451,6 @@ year={2020},
   selected={false},
   abstract={State-of-the-art rehearsal-free continual learning methods exploit the peculiarities of Vision Transformers to learn task-specific prompts, drastically reducing catastrophic forgetting. However, there is a tradeoff between the number of learned parameters and the performance, making such models computationally expensive. In this work, we aim to reduce this cost while maintaining competitive performance. We achieve this by revisiting and extending a simple transfer learning idea: learning task-specific normalization layers. Specifically, we tune the scale and bias parameters of LayerNorm for each continual learning task, selecting them at inference time based on the similarity between task-specific keys and the output of the pre-trained model. To make the classifier robust to incorrect selection of parameters during inference, we introduce a two-stage training procedure, where we first optimize the task-specific parameters and then train the classifier with the same selection procedure of the inference time. Experiments on ImageNet-R and CIFAR-100 show that our method achieves results that are either superior or on par with the state of the art while being computationally cheaper.}
 }
-
 
 @article{mancini2019discovering,
   bibtex_show={true},
@@ -448,7 +553,7 @@ year = {2019},
   preview={neurips2022.png},
   html={https://proceedings.neurips.cc/paper_files/paper/2022/hash/c9f95e9ec39fa5ad3d0a562b993b92aa-Abstract-Conference.html},  
   pdf={https://proceedings.neurips.cc/paper_files/paper/2022/file/c9f95e9ec39fa5ad3d0a562b993b92aa-Paper-Conference.pdf},
-  code={https://github. com/abhrac/relational-proxies.},   
+  code={https://github.com/abhrac/relational-proxies},   
   selected={false},
   abstract={Fine-grained categories that largely share the same set of parts cannot be discriminated based on part information alone, as they mostly differ in the way the local parts relate to the overall global structure of the object. We propose Relational Proxies, a novel approach that leverages the relational information between the global and local views of an object for encoding its semantic label. Starting with a rigorous formalization of the notion of distinguishability between fine-grained categories, we prove the necessary and sufficient conditions that a model must satisfy in order to learn the underlying decision boundaries in the fine-grained setting. We design Relational Proxies based on our theoretical findings and evaluate it on seven challenging fine-grained benchmark datasets and achieve state-of-the-art results on all of them, surpassing the performance of all existing works with a margin exceeding 4% in some cases. We also experimentally validate our theory on fine-grained distinguishability and obtain consistent results across multiple benchmarks.}
 }
