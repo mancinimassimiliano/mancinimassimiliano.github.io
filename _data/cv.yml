@@ -2,96 +2,236 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Massimiliano Mancini
     - name: Languages
-      value: English, German
+      value: Italian, English
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+    - title: Ph.D. in Engineering in Computer Science
+      institution: Sapienza University of Rome (Rome, Italy)
+      year: 2020
+      description: advised by Prof. Barbara Caputo and Prof. Elisa Ricci
 
-- title: Experience
+    - title: Master of Science in Artificial Intelligence and Robotics
+      institution: Sapienza University of Rome (Rome, Italy)
+      year: 2016
+
+    - title: Bachelor degree in Computer and Electronic Engineering
+      institution: University of Perugia (Perugia, Italy)
+      year: 2014
+
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Assistant Professor (RTDa)
+      institution: University of Trento
+      year: 2023-now
+
+    - title: Postdoctoral Researcher
+      institution: University of Tübingen (Tübingen, Germany)
+      year: 2020-2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - within the Explainable Machine Learning group of Prof. Zeynep Akata
+
+    - title: Visiting Ph.D. student 
+      institution: University of Tübingen (Tübingen, Germany)
+      year: 2020
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - within the Explainable Machine Learning group of Prof. Zeynep Akata
+        - part of the ELLIS exchange framework
+    
+    - title: Visiting Ph.D. student 
+      institution: KTH Royal Institute of Technology (Stockholm, Sweden)
+      year: summer 2018
       description:
+        - within the Robotics Perception and Learning laboratory (RPL)
+        - advised by Dr. hakan Karaoguz and Prof. Patric Jensfelt
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Research Fellow
+      institution: Italian Institute of Technology (Turin, Italy)
+      year: 2019-2020
+      description:
+        - within the Visual and Multimodal Applied Learning (VANDAL) of Prof. Barbara Caputo
+    
+    - title: Research Collaborator
+      institution: Fondazione Bruno Kessler (Trento, Italy)
+      year: 2017-2020
+      description:
+        - within the Technologies of Vision laboratory (TeV) led by Dr. Stefano Messelodi
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Awards and Acknowledgements 
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Outstanding editor
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+        - ICRA 2024
 
-- title: Other Interests
-  type: list
+    - title: Outstanding reviewer 
+      items:
+        - CVPR 2019, 2021, 2022
+        - ICCV 2019, 2021
+        - ICML 2022
+        - NeurIPS 2023
+
+    - title: Ph.D. Thesis Award 2020
+      items: 
+        - Awarded to the best Ph.D. theses defended at the Sapienza University of Rome between January 2017 and December 2020.
+    - title: Best Paper Award Honorable mention
+      items: 
+        - ECCV 2018 Workshop on Transferring and Adapting Source Knowledge in Computer Vision 
+        - For the work "Adding New Tasks to a Single Network with Weight Transformations using Binary Masks"
+    - title: Reading group competiton winner
+      items:
+        - International Computer Vision Summer School 2018 (Scicli, Italy)
+        - Member of the winning team of the reading group competition, with Julian Zilly, Amit Boyarski, Micael Carvalho, Amir Atapour Abarghouei, Konstantinos Amplianitis, Aleksandr Krasnov, Hern ́an Gonzalez, Riccardo Spezialetti, Carlos Sampedro Pérez.
+
+- title: Research grants
+  type: time_table
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: Innovation Grants for Science/Life Science
+      institution: University of Tübingen
+      year: 2022-2023
+      description:
+        - "Project title: Trustworthy and Dynamic Compositional Recognition"
+
+- title: Services
+  type: nested_list
+  contents:
+    - title: Editorial activities
+      items:
+        - Guest Editor for the Special Issue on Multimodal Learning, International Journal of Computer Vision
+        - Associate Editor for Computer Vision and Image Understanding
+        - Action Editor for Transactions on Machine Learning Research
+
+    - title: Area chair
+      items:
+        - ICRA 2024
+        - CVPR 2024
+        - ECCV 2024
+        - NeurIPS 2024 
+    
+    - title: Reviewer for
+      items:
+        - <u>Journals:</u> IEEE T-PAMI, IJCV, T-IP, TMM, CVIU, MVA, IEEE RA-L, IEEE T-RO, TMLR, IEEE T-NN, Pattern Recognition, Neural Networks, IET Computer Vision, Frontiers in CS, Engineering Reports, IJMLC.
+        - <u>Conferences:</u> CVPR, ICCV, ECCV, NeurIPS, ICLR, ICML, AAAI, ICRA, IROS, ACM-MM, ICPR, ACCV, GCPR, WACV, BMVC, CoLLAs, CAI.
+    
+    - title: Evaluator for
+      items:
+        - IMPRS-IS (2021-2023)
+        - ELLIS PhD program (2022)
+    
+    - title: Student volunteer for
+      items:
+        - ICCV 2017
+
+
+- title: Organization
+  type: nested_list
+  contents:
+    - title: Conferences
+      items:
+        - Publicity/Web Chair for ICIAP 2019
+
+    - title: Workshops
+      items:
+        - 1st International Workshop on Industrial Machine Learning (at ICPR 2020)
+        - 2nd International Workshop on Industrial Machine Learning (at ICPR 2022)
+        - 5th Multimodal Learning and Applications Workshop (at CVPR 2022)
+        - Workshop on Weakly Supervised Computer Vision (at Deep Learning Indaba 2022)
+        - Explainability in Machine Learning Workshop (Tübingen, March 2023)
+        - 1st Workshop on Green Foundation Models (at ECCV 2024)
+    
+    - title: Tutorials
+      items:
+        - "Transferring Knowledge Across Domains: an Introduction to Deep Domain Adaptation (at ICIAP 2019)"
+        - "Visual Recognition Beyond the Comfort Zone: Adapting to Unseen Concepts on the Fly (at ICCV 2023)"
+    
+    - title: Symposium
+      items:
+        - Computer Vision Trento Symposium (Trento, June 2024)
+
+- title: Invited talks
+  type: time_table
+  contents:
+    - title: "AdaGraph: Unifying Predictive and Continuous Domain Adaptation through Graphs"
+      institution: CVPL highlights, ICIAP
+      year: 2019
+
+    - title: Open World Compositional Zero-Shot Learning
+      institution: EPFL Computer vision talks
+      year: 2021
+    
+    - title: Compositional Zero-Shot Learning
+      institution: 2D3DAI
+      year: 2021
+
+    - title: On the challenges of Open World Compositional Zero-Shot Learning
+      institution: Bosch Industry-on-Campus (IoC) Lab
+      year: 2022
+
+    - title: Compositional Zero-Shot Learning
+      institution: National AI PhD Fall School
+      year: 2023
+
+    - title: Vocabulary-free Image Classification
+      institution: 1st Year Joint workshop of FAIR and ELLIS, Trento
+      year: 2023
+
+    - title: "Opening multimodal doors with language: from recognition to bias detection"
+      institution: 7th Multimodal Learning and Applications Workshop (at CVPR 2024)
+      year: 2024
+      
+- title: Teaching
+  type: time_table
+  contents:
+    - title: Deep Learning beyond the Closed World
+      institution: Summer School on Complex Networks and Telecommunications, Como School of Advanced Studies
+      year: Jul. 2021
+      description: Ph.D.
+
+    - title: Seminars on Learning with Limited Labeled Data
+      institution: University of Tübingen
+      year: Oct.-Dec. 2021
+      description: MSc and BSc, 28 hours, 3 credits.
+    
+    - title: Visual Recognition beyond the Closed World
+      institution: IECS Doctoral School, University of Trento
+      year: Aug.-Sep. 2023
+      description: PhD., 20 hours, 3 credits.
+
+    
+    - title: Trends and Applications of Computer Vision
+      institution: University of Trento
+      year: WS 2023/24
+      description: MSc, (40 hours, 20 mine), 3 credits.
+
+- title: Supervision
+  type: nested_list
+  contents:
+    - title: Ph.D. students
+      items:
+        - Simone Caldarella (University of Trento, with Elisa Ricci)
+        - Thomas De Min (University of Trento, with Elisa Ricci)
+
+    - title: MSc students
+      items:
+        - Fabio Cermelli (Politecnico di Torino)
+        - Dario Fontanel (Politecnico di Torino)
+        - Alessandro Rizzuto Cermelli (University of Trento)
+        - Debora Calddarola (Politecnico di Torino)
+        - Giuseppe Pastore (Politecnico di Torino)
+        - Robin M. Schmidt (University of Tübingen)
+        - Michael Groger (University of Tübingen)
+        - Marco Garosi (University of Trento)
+        - Francesco Gentile (University of Trento)
+
+- title: Others
+  type: nested_list
+  contents:
+    - title: Membership
+      items:
+        - ELLIS society
+        - ELLIS Unit Trento
+        - Computer Vision Foundation
