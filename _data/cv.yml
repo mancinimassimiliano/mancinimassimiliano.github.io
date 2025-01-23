@@ -74,6 +74,7 @@
         - ICCV 2019, 2021
         - ICML 2022
         - NeurIPS 2023
+        - WACV 2024 
 
     - title: Ph.D. Thesis Award 2020
       items: 
@@ -96,6 +97,12 @@
       description:
         - "Project title: Trustworthy and Dynamic Compositional Recognition"
 
+    - title: talian SuperComputing Resource Allocation (ISCRA) - Call B
+      institution: CINECA
+      year: 2024-2025
+      description:
+        - "Project title: Compressed Vision Language Models for Lightweight Compositional Generalization (COMP2GEN)"
+
 - title: Services
   type: nested_list
   contents:
@@ -107,8 +114,8 @@
 
     - title: Area chair
       items:
-        - ICRA 2024
-        - CVPR 2024
+        - ICRA 2024-25
+        - CVPR 2024-25
         - ECCV 2024
         - NeurIPS 2024 
     
@@ -167,6 +174,10 @@
       institution: 2D3DAI
       year: 2021
 
+    - title: Deep Learning beyond the Closed World
+      institution: Summer School on Complex Networks and Telecommunications, Como School of Advanced Studies
+      year: 2021
+
     - title: On the challenges of Open World Compositional Zero-Shot Learning
       institution: Bosch Industry-on-Campus (IoC) Lab
       year: 2022
@@ -182,15 +193,19 @@
     - title: "Opening multimodal doors with language: from recognition to bias detection"
       institution: 7th Multimodal Learning and Applications Workshop (at CVPR 2024)
       year: 2024
+    
+    - title: "From zero-shot learning to training-free generalization"
+      institution: AIxIA International Summer School on Advances in Artificial Intelligence
+      year: 2024
+
+    - title: "Vocabulary-free Image Classification"
+      institution: Workshop on Traditional Computer Vision in the Deep Learning Era (at I-RIM 2024)
+      year: 2024
+      
       
 - title: Teaching
   type: time_table
   contents:
-    - title: Deep Learning beyond the Closed World
-      institution: Summer School on Complex Networks and Telecommunications, Como School of Advanced Studies
-      year: Jul. 2021
-      description: Ph.D.
-
     - title: Seminars on Learning with Limited Labeled Data
       institution: University of Tübingen
       year: Oct.-Dec. 2021
@@ -201,11 +216,15 @@
       year: Aug.-Sep. 2023
       description: PhD., 20 hours, 3 credits.
 
-    
     - title: Trends and Applications of Computer Vision
       institution: University of Trento
       year: WS 2023/24
-      description: MSc, (40 hours, 20 mine), 3 credits.
+      description: MSc, 3 credits.
+
+    - title: Trends and Applications of Computer Vision
+      institution: University of Trento
+      year: WS 2024/25
+      description: MSc, 3 credits.
 
 - title: Supervision
   type: nested_list
@@ -214,6 +233,7 @@
       items:
         - Simone Caldarella (University of Trento, with Elisa Ricci)
         - Thomas De Min (University of Trento, with Elisa Ricci)
+        - Matteo Farina (University of Trento, with Elisa Ricci)
 
     - title: MSc students
       items:
