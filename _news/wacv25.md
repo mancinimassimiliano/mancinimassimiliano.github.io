@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Happy to be among the outstandign reviewers at <a href="https://wacv2025.thecvf.com/">WACV 2025</a>! 
+Happy to be among the outstanding reviewers at <a href="https://wacv2025.thecvf.com/">WACV 2025</a>!
