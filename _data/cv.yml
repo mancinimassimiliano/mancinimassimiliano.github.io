@@ -25,9 +25,12 @@
 - title: Research Experience
   type: time_table
   contents:
+    - title: Assistant Professor (RTDb)
+      institution: University of Trento
+      year: 2025-now
     - title: Assistant Professor (RTDa)
       institution: University of Trento
-      year: 2023-now
+      year: 2023-2025
 
     - title: Postdoctoral Researcher
       institution: University of Tübingen (Tübingen, Germany)
@@ -117,7 +120,7 @@
         - ICRA 2024-25
         - CVPR 2024-25
         - ECCV 2024
-        - NeurIPS 2024 
+        - NeurIPS 2024-25 
     
     - title: Reviewer for
       items:
@@ -149,6 +152,7 @@
         - Workshop on Weakly Supervised Computer Vision (at Deep Learning Indaba 2022)
         - Explainability in Machine Learning Workshop (Tübingen, March 2023)
         - 1st Workshop on Green Foundation Models (at ECCV 2024)
+        - ItalNet, Connecting the early career Italian computer vision and pattern recognition community (at ICIAP 2025)
     
     - title: Tutorials
       items:
@@ -201,6 +205,10 @@
     - title: "Vocabulary-free Image Classification"
       institution: Workshop on Traditional Computer Vision in the Deep Learning Era (at I-RIM 2024)
       year: 2024
+
+    - title: "Compositional Representations in Vision-Language Models"
+      institution: Department of Humanities, University of Macerata, Macerata (Italy)
+      year: 2025
       
       
 - title: Teaching
@@ -234,6 +242,7 @@
         - Simone Caldarella (University of Trento, with Elisa Ricci)
         - Thomas De Min (University of Trento, with Elisa Ricci)
         - Matteo Farina (University of Trento, with Elisa Ricci)
+        - Luca Zanella (University of Trento, with Elisa Ricci)
 
     - title: MSc students
       items:
