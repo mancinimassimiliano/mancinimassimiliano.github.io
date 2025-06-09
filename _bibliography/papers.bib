@@ -1,6 +1,132 @@
 ---
 ---
 
+@inproceedings{liu2025test,
+  bibtex_show={true},
+  title={Test-time Vocabulary Adaptation for Language-driven Object Detection},
+  author={Liu, Mingxuan and Hayes, Tayler L. and Mancini, Massimiliano and Ricci, Elisa and Volpi, Riccardo and Csurka, Gabriela},
+  booktitle={IEEE International Conference on Image Processing (ICIP)},
+  year={2025},
+  preview={icip25.png},
+  html={https://arxiv.org/abs/2506.00333},  
+  pdf={https://arxiv.org/pdf/2506.00333},
+  selected={false},
+  abstract={Open-vocabulary object detection models allow users to freely specify a class vocabulary in natural language at test time, guiding the detection of desired objects. However, vocabularies can be overly broad or even mis-specified, hampering the overall performance of the detector. In this work, we propose a plug-and-play Vocabulary Adapter (VocAda) to refine the user-defined vocabulary, automatically tailoring it to categories that are relevant for a given image. VocAda does not require any training, it operates at inference time in three steps: i) it uses an image captionner to describe visible objects, ii) it parses nouns from those captions, and iii) it selects relevant classes from the user-defined vocabulary, discarding irrelevant ones. Experiments on COCO and Objects365 with three state-of-the-art detectors show that VocAda consistently improves performance, proving its versatility. The code is open source.}
+}
+
+@article{berasi2025not,
+  bibtex_show={true},
+  title={Not Only Text: Exploring Compositionality of Visual Representations in Vision-Language Models},
+  author={Berasi, Davide and Farina, Matteo and Mancini, Massimiliano and Ricci, Elisa and Strisciuglio, Nicola},
+  journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2025},
+  preview={notonlytext.png},
+  html={https://openaccess.thecvf.com/content/CVPR2025/html/Berasi_Not_Only_Text_Exploring_Compositionality_of_Visual_Representations_in_Vision-Language_CVPR_2025_paper.html},  
+  pdf={https://openaccess.thecvf.com/content/CVPR2025/papers/Berasi_Not_Only_Text_Exploring_Compositionality_of_Visual_Representations_in_Vision-Language_CVPR_2025_paper.pdf},
+  code={https://github.com/BerasiDavide/vlm_image_compositionality.},   
+  selected={true},
+  abstract={Vision-Language Models (VLMs) learn a shared feature space for text and images, enabling the comparison of inputs of different modalities. While prior works demonstrated that VLMs organize natural language representations into regular structures encoding composite meanings, it remains unclear if compositional patterns also emerge in the visual embedding space. In this work, we investigate compositionality in the image domain, where the analysis of compositional properties is challenged by noise and sparsity of visual data. We address these problems and propose a framework, called Geodesically Decomposable Embeddings (GDE), that approximates image representations with geometry-aware compositional structures in the latent space. We demonstrate that visual embeddings of pre-trained VLMs exhibit a compositional arrangement, and evaluate the effectiveness of this property in the tasks of compositional classification and group robustness. GDE achieves stronger performance in compositional classification compared to its counterpart method that assumes linear geometry of the latent space. Notably, it is particularly effective for group robustness, where we achieve higher results than task-specific solutions. Our results indicate that VLMs can automatically develop a human-like form of compositional reasoning in the visual domain, making their underlying processes more interpretable.}
+}
+
+@inproceedings{garosi2025comca,
+  bibtex_show={true},
+  title={Compositional Caching for Training-free Open-vocabulary Attribute Detection},
+  author={Garosi, Marco and Conti, Alessandro and Liu, Gaowen and Ricci, Elisa and Mancini, Massimiliano},
+  journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2025},
+  preview={comca.png},
+  html={https://openaccess.thecvf.com/content/CVPR2025/html/Garosi_Compositional_Caching_for_Training-free_Open-vocabulary_Attribute_Detection_CVPR_2025_paper.html},  
+  pdf={https://openaccess.thecvf.com/content/CVPR2025/papers/Garosi_Compositional_Caching_for_Training-free_Open-vocabulary_Attribute_Detection_CVPR_2025_paper.pdf},
+  code={https://comca-attributes.github.io},   
+  selected={true},
+  abstract={Attribute detection is crucial for many computer vision tasks, as it enables systems to describe properties such as color, texture, and material. Current approaches often rely on labor-intensive annotation processes which are inherently limited: objects can be described at an arbitrary level of detail (eg, color vs. color shades), leading to ambiguities when the annotators are not instructed carefully. Furthermore, they operate within a predefined set of attributes, reducing scalability and adaptability to unforeseen downstream applications. We present Compositional Caching (ComCa), a training-free method for open-vocabulary attribute detection that overcomes these constraints. ComCa requires only the list of target attributes and objects as input, using them to populate an auxiliary cache of images by leveraging web-scale databases and Large Language Models to determine attribute-object compatibility. To account for the compositional nature of attributes, cache images receive soft attribute labels. Those are aggregated at inference time based on the similarity between the input and cache images, refining the predictions of underlying Vision-Language Models (VLMs). Importantly, our approach is model-agnostic, compatible with various VLMs. Experiments on public datasets demonstrate that ComCa significantly outperforms zero-shot and cache-based baselines, competing with recent training-based methods, proving that a carefully designed training-free approach can successfully address open-vocabulary attribute detection.}
+}
+
+@article{guimard2025c2b,
+  bibtex_show={true},
+  title={Classifier-to-Bias: Toward Unsupervised Automatic Bias Detection for Visual Classifiers},
+  author={Guimard, Quentin and D'Incà, Moreno and Peruzzo, Elia and Mancini, Massimiliano and Ricci, Elisa},
+  journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2025},
+  preview={c2b.png},
+  html={https://openaccess.thecvf.com/content/CVPR2025/html/Guimard_Classifier-to-Bias_Toward_Unsupervised_Automatic_Bias_Detection_for_Visual_Classifiers_CVPR_2025_paper.html},  
+  pdf={https://openaccess.thecvf.com/content/CVPR2025/papers/Guimard_Classifier-to-Bias_Toward_Unsupervised_Automatic_Bias_Detection_for_Visual_Classifiers_CVPR_2025_paper.pdf},
+  code={https://github.com/mardgui/C2B},   
+  selected={true},
+  abstract={A person downloading a pre-trained model from the web should be aware of its biases. Existing approaches for bias identification rely on datasets containing labels for the task of interest, something that a non-expert may not have access to, or may not have the necessary resources to collect: this greatly limits the number of tasks where model biases can be identified. In this work, we present Classifier-to-Bias (C2B), the first bias discovery framework that works without access to any labeled data: it only relies on a textual description of the classification task to identify biases in the target classification model. This description is fed to a large language model to generate bias proposals and corresponding captions depicting biases together with task-specific target labels. A retrieval model collects images for those captions, which are then used to assess the accuracy of the model wrt the given biases. C2B is training-free, does not require any annotations, has no constraints on the list of biases, and can be applied to any pre-trained model on any classification task. Experiments on two publicly available datasets show that C2B discovers biases beyond those of the original datasets and outperforms a recent state-of-the-art bias detection baseline that relies on task-specific annotations, being a promising first step toward addressing task-agnostic unsupervised bias detection.}
+}
+
+@article{farina2025rethinking,
+  bibtex_show={true},
+  title={Rethinking Few-Shot Adaptation of Vision-Language Models in Two Stages},
+  author={Farina, Matteo and Mancini, Massimiliano and Iacca, Giovanni and Ricci, Elisa},
+  journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2025},
+  preview={2sfs.png},
+  html={https://openaccess.thecvf.com/content/CVPR2025/html/Farina_Rethinking_Few-Shot_Adaptation_of_Vision-Language_Models_in_Two_Stages_CVPR_2025_paper.html},  
+  pdf={https://openaccess.thecvf.com/content/CVPR2025/papers/Farina_Rethinking_Few-Shot_Adaptation_of_Vision-Language_Models_in_Two_Stages_CVPR_2025_paper.pdf},
+  code={https://github.com/FarinaMatteo/multiflow},   
+  selected={true},
+  abstract={An old-school recipe for training a classifier is to (i) learn a good feature extractor and (ii) optimize a linear layer atop. When only a handful of samples are available per category, as in Few-Shot Adaptation (FSA), data are insufficient to fit a large number of parameters, rendering the above impractical. This is especially true with large pre-trained Vision-Language Models (VLMs), which motivated successful research at the intersection of Parameter-Efficient Fine-tuning (PEFT) and FSA. In this work, we start by analyzing the learning dynamics of PEFT techniques when trained on few-shot data from only a subset of categories, referred to as the "base" classes. We show that such dynamics naturally splits into two distinct phases: (i) task-level feature extraction and (ii) specialization to the available concepts. To accommodate this dynamic, we then depart from prompt- or adapter-based methods and tackle FSA differently. Specifically, given a fixed computational budget, we split it to (i) learn a task-specific feature extractor via PEFT and (ii) train a linear classifier on top. We call this scheme Two-Stage Few-Shot Adaptation (2SFS). Differently from established methods, our scheme enables a novel form of selective inference at a category level, i.e., at test time, only novel categories are embedded by the adapted text encoder, while embeddings of base categories are available within the classifier. Results with fixed hyperparameters across two settings, three backbones, and eleven datasets, show that 2SFS matches or surpasses the state-of-the-art, while established methods degrade significantly across settings.}
+}
+
+
+@article{zanella2025synvita,
+  bibtex_show={true},
+  title={Can Text-to-Video Generation help Video-Language Alignment?},
+  author={Zanella, Luca and Mancini, Massimiliano and Menapace, Willi and Tulyakov, Sergey and Wang, Yiming and Ricci, Elisa},
+  journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2025},
+  preview={synvita.png},
+  html={https://openaccess.thecvf.com/content/CVPR2025/html/Zanella_Can_Text-to-Video_Generation_help_Video-Language_Alignment_CVPR_2025_paper.html},  
+  pdf={https://openaccess.thecvf.com/content/CVPR2025/papers/Zanella_Can_Text-to-Video_Generation_help_Video-Language_Alignment_CVPR_2025_paper.pdf},
+  code={https://github.com/FarinaMatteo/rethinking_fewshot_vlms},   
+  selected={true},
+  abstract={Recent video-language alignment models are trained on sets of videos, each with an associated positive caption and a negative caption generated by large language models. A problem with this procedure is that negative captions may introduce linguistic biases, i.e., concepts are seen only as negatives and never associated with a video. While a solution would be to collect videos for the negative captions, existing databases lack the fine-grained variations needed to cover all possible negatives. In this work, we study whether synthetic videos can help to overcome this issue. Our preliminary analysis with multiple generators shows that, while promising on some tasks, synthetic videos harm the performance of the model on others. We hypothesize this issue is linked to noise (semantic and visual) in the generated videos and develop a method, SynViTA, that accounts for those. SynViTA dynamically weights the contribution of each synthetic video based on how similar its target caption is w.r.t. the real counterpart. Moreover, a semantic consistency loss makes the model focus on fine-grained differences across captions, rather than differences in video appearance. Experiments show that, on average, SynViTA improves over existing methods on VideoCon test sets and SSv2-Temporal, SSv2-Events, and ATP-Hard benchmarks, being a first promising step for using synthetic videos when learning video-language models.}
+}
+
+@inproceedings{demin2025unlearning,
+  bibtex_show={true},
+  title={Unlearning Personal Data from a Single Image},
+  author={De Min, Thomas and Mancini, Massimiliano and Lathuilière, Stéphane and Roy, Subhankar and Ricci, Elisa},
+  booktitle={Transactions on Machine Learning Research},
+  year={2025},
+  preview={tmlr_unlearning.png},
+  html={https://openreview.net/forum?id=VxC4PZ71Ym},  
+  pdf={https://openreview.net/pdf?id=VxC4PZ71Ym},
+  code={https://github.com/tdemin16/one-shui},   
+  selected={false},
+  abstract={Machine unlearning aims to erase data from a model as if the latter never saw them during training. While existing approaches unlearn information from complete or partial access to the training data, this access can be limited over time due to privacy regulations. Currently, no setting or benchmark exists to probe the effectiveness of unlearning methods in such scenarios. To fill this gap, we propose a novel task we call One-Shot Unlearning of Personal Identities (1-SHUI) that evaluates unlearning models when the training data is not available. We focus on unlearning identity data, which is specifically relevant due to current regulations requiring personal data deletion after training. To cope with data absence, we expect users to provide a portraiting picture to aid unlearning. We design requests on CelebA, CelebA-HQ, and MUFAC with different unlearning set sizes to evaluate applicable methods in 1-SHUI. Moreover, we propose MetaUnlearn, an effective method that meta-learns to forget identities from a single image. Our findings indicate that existing approaches struggle when data availability is limited, especially when there is a dissimilarity between the provided samples and the training data.}
+}
+
+@inproceedings{das2025onevlm,
+  bibtex_show={true},
+  title={One VLM to Keep it Learning: Generation and Balancing for Data-free Continual Visual Question Answering},
+  author={Das, Deepayan and Talon, Davide and Mancini, Massimiliano and Wang, Yiming and Ricci, Elisa},
+  booktitle={IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year={2025},
+  preview={wacv25-continual.png},
+  html={https://ieeexplore.ieee.org/abstract/document/10943493},  
+  pdf={https://arxiv.org/pdf/2411.02210},
+  code={https://github.com/Deepayan137/GaB},   
+  selected={false},
+  abstract={Vision-Language Models (VLMs) have shown significant promise in Visual Question Answering (VQA) tasks by leveraging web-scale multimodal datasets. However, these models often struggle with continual learning due to catastrophic forgetting when adapting to new tasks. As an effective remedy to mitigate catastrophic forgetting, rehearsal strategy uses the data of past tasks upon learning new task. However, such strategy incurs the need of storing past data, which might not be feasible due to hardware constraints or privacy concerns. In this work, we propose the first data-free method that leverages the language generation capability of a VLM, instead of relying on external models, to produce pseudo-rehearsal data for addressing continual VQA. Our proposal, named as GaB, generates pseudo-rehearsal data by posing previous task questions on new task data. Yet, despite being effective, the distribution of generated questions skews towards the most frequently posed questions due to the limited and task-specific training data. To mitigate this issue, we introduce a pseudo-rehearsal balancing module that aligns the generated data towards the ground-truth data distribution using either the question meta-statistics or an unsupervised clustering method. We evaluate our proposed method on two recent benchmarks, i.e., VQACL-VQAv2 and CLOVE-function benchmarks. GaB outperforms all the data-free baselines with substantial improvement in maintaining VQA performance across evolving tasks, while being on-par with methods with access to the past data.}
+}
+
+
+@inproceedings{garosi20253d,
+  bibtex_show={true},
+  title={3D Part Segmentation via Geometric Aggregation of 2D Visual Features},
+  author={Garosi, Marco and Tedoldi, Riccardo and Boscaini, Davide and Mancini, Massimiliano and Sebe, Nicu and Poiesi, Fabio},
+  booktitle={IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year={2025},
+  preview={wacv25-3d.png},
+  html={https://ieeexplore.ieee.org/abstract/document/10943567},  
+  pdf={https://arxiv.org/pdf/2412.04247},
+  code={https://3d-cops.github.io},   
+  selected={false},
+  abstract={Supervised 3D part segmentation models are tailored for a fixed set of objects and parts, limiting their transferability to open-set, real-world scenarios. Recent works have explored vision-language models (VLMs) as a promising alternative, using multi-view rendering and textual prompting to identify object parts. However, naively applying VLMs in this context introduces several drawbacks, such as the need for meticulous prompt engineering, and fails to leverage the 3D geometric structure of objects. To address these limitations, we propose COPS, a COmprehensive model for Parts Segmentation that blends the semantics extracted from visual concepts and 3D geometry to effectively identify object parts. COPS renders a point cloud from multiple viewpoints, extracts 2D features, projects them back to 3D, and uses a novel geometric-aware feature aggregation procedure to ensure spatial and semantic consistency. Finally, it clusters points into parts and labels them. We demonstrate that COPS is efficient, scalable, and achieves zero-shot state-of-the-art performance across five datasets, covering synthetic and real-world data, texture-less and coloured objects, as well as rigid and non-rigid shapes.}
+}
 
 @article{farina2024frustratingly,
   bibtex_show={true},
@@ -164,7 +290,7 @@
   html={https://openaccess.thecvf.com/content/CVPR2024/html/Farina_MULTIFLOW_Shifting_Towards_Task-Agnostic_Vision-Language_Pruning_CVPR_2024_paper.html},  
   pdf={https://openaccess.thecvf.com/content/CVPR2024/papers/Farina_MULTIFLOW_Shifting_Towards_Task-Agnostic_Vision-Language_Pruning_CVPR_2024_paper.pdf},
   code={https://github.com/FarinaMatteo/multiflow},   
-  selected={true},
+  selected={false},
   abstract={While excellent in transfer learning Vision-Language models (VLMs) come with high computational costs due to their large number of parameters. To address this issue removing parameters via model pruning is a viable solution. However existing techniques for VLMs are task-specific and thus require pruning the network from scratch for each new task of interest. In this work we explore a new direction: Task-Agnostic Vision-Language Pruning (TA-VLP). Given a pretrained VLM the goal is to find a unique pruned counterpart transferable to multiple unknown downstream tasks. In this challenging setting the transferable representations already encoded in the pretrained model are a key aspect to preserve. Thus we propose Multimodal Flow Pruning (MULTIFLOW) a first gradient-free pruning framework for TA-VLP where: (i) the importance of a parameter is expressed in terms of its magnitude and its information flow by incorporating the saliency of the neurons it connects; and (ii) pruning is driven by the emergent (multimodal) distribution of the VLM parameters after pretraining. We benchmark eight state-of-the-art pruning algorithms in the context of TA-VLP experimenting with two VLMs three vision-language tasks and three pruning ratios. Our experimental results show that MULTIFLOW outperforms recent sophisticated combinatorial competitors in the vast majority of the cases paving the way towards addressing TA-VLP. The code is publicly available at https://github.com/FarinaMatteo/multiflow.}
 }
 
@@ -283,7 +409,7 @@
   html={https://openaccess.thecvf.com/content/CVPR2021/html/Mancini_Open_World_Compositional_Zero-Shot_Learning_CVPR_2021_paper.html},  
   pdf={https://openaccess.thecvf.com/content/CVPR2021/papers/Mancini_Open_World_Compositional_Zero-Shot_Learning_CVPR_2021_paper.pdf},
   code={https://github.com/ExplainableML/czsl},   
-  selected={true},
+  selected={false},
   abstract={Compositional Zero-Shot learning (CZSL) requires to recognize state-object compositions unseen during training. In this work, instead of assuming prior knowledge about the unseen compositions, we operate in the open world setting, where the search space includes a large number of unseen compositions some of which might be unfeasible. In this setting, we start from the cosine similarity between visual features and compositional embeddings. After estimating the feasibility score of each composition, we use these scores to either directly mask the output space or as a margin for the cosine similarity between visual features and compositional embeddings during training. Our experiments on two standard CZSL benchmarks show that all the methods suffer severe performance degradation when applied in the open world setting. While our simple CZSL model achieves state-of-the-art performances in the closed world scenario, our feasibility scores boost the performance of our approach in the open world setting, clearly outperforming the previous state of the art.}
 }
 
