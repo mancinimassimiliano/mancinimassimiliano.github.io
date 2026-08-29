@@ -1,6 +1,266 @@
 ---
 ---
 
+@article{guimard2026sem,
+  bibtex_show={true},
+  preview={sem.png},
+  title={SEM: Sparse Embedding Modulation for Post-Hoc Debiasing of Vision-Language Models},
+  author={Guimard, Quentin and Bartsch, Federico and Caldarella, Simone and Aljundi, Rahaf and Ricci, Elisa and Mancini, Massimiliano},
+  journal={Findings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2026},
+  html={https://arxiv.org/abs/2603.19028},
+  pdf={https://arxiv.org/pdf/2603.19028},
+  code={https://github.com/mardgui/SEM},
+  website={https://sparse-embedding-modulation.github.io/},
+  selected={false},
+  abstract={Models that bridge vision and language, such as CLIP, are key components of multimodal AI, yet their large-scale, uncurated training data introduce severe social and spurious biases. Existing post-hoc debiasing methods often operate directly in the dense CLIP embedding space, where bias and task-relevant information are highly entangled. This entanglement limits their ability to remove bias without degrading semantic fidelity. In this work, we propose Sparse Embedding Modulation (SEM), a post-hoc, zero-shot debiasing framework that operates in a Sparse Autoencoder (SAE) latent space. By decomposing CLIP text embeddings into disentangled features, SEM identifies and modulates bias-relevant neurons while preserving query-relevant ones. This enables more precise, non-linear interventions. Across four benchmark datasets and two CLIP backbones, SEM achieves substantial fairness gains in retrieval and zero-shot classification. Our results demonstrate that sparse latent representations provide an effective foundation for post-hoc debiasing of vision-language models.}
+}
+
+@article{gentile2026sith,
+  bibtex_show={true},
+  preview={sith.png},
+  title={From Weights to Concepts: Data-Free Interpretability of CLIP via Singular Vector Decomposition},
+  author={Gentile, Francesco and Dall'Asen, Nicola and Tonini, Francesco and Mancini, Massimiliano and Vaquero, Lorenzo and Ricci, Elisa},
+  journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2026},
+  html={https://arxiv.org/abs/2603.24653},
+  pdf={https://arxiv.org/pdf/2603.24653},
+  website={https://frangente.github.io/SITH/},
+  selected={false},
+  abstract={As vision-language models are deployed at scale, understanding their internal mechanisms becomes increasingly critical. Existing interpretability methods predominantly rely on activations, making them dataset-dependent, vulnerable to data bias, and often restricted to coarse head-level explanations. We introduce SITH (Semantic Inspection of Transformer Heads), a fully data-free, training-free framework that directly analyzes CLIP's vision transformer in weight space. For each attention head, we decompose its value-output matrix into singular vectors and interpret each one via COMP (Coherent Orthogonal Matching Pursuit), a new algorithm that explains them as sparse, semantically coherent combinations of human-interpretable concepts. We show that SITH yields coherent, faithful intra-head explanations, validated through reconstruction fidelity and interpretability experiments. This allows us to use SITH for precise, interpretable weight-space model edits that amplify or suppress specific concepts, improving downstream performance without retraining. Furthermore, we use SITH to study model adaptation, showing how fine-tuning primarily reweights a stable semantic basis rather than learning entirely new features.}
+}
+
+@inproceedings{demin2026proactivebench,
+  bibtex_show={true},
+  preview={proactivebench.png},
+  title={ProactiveBench: Benchmarking Proactiveness in Multimodal Large Language Models},
+  author={De Min, Thomas and Roy, Subhankar and Lathuilière, Stéphane and Ricci, Elisa and Mancini, Massimiliano},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2026},
+  html={https://arxiv.org/abs/2603.19466},
+  pdf={https://arxiv.org/pdf/2603.19466},
+  code={https://github.com/tdemin16/proactivebench},
+  selected={false},
+  abstract={Effective collaboration begins with knowing when to ask for help. For example, when trying to identify an occluded object, a human would ask someone to remove the obstruction. Can MLLMs exhibit a similar "proactive" behavior by requesting simple user interventions? To investigate this, we introduce ProactiveBench, a benchmark built from seven repurposed datasets that tests proactiveness across different tasks such as recognizing occluded objects, enhancing image quality, and interpreting coarse sketches. We evaluate 22 MLLMs on ProactiveBench, showing that (i) they generally lack proactiveness; (ii) proactiveness does not correlate with model capacity; (iii) hinting at proactiveness yields only marginal gains. Surprisingly, we found that conversation histories and in-context learning introduce negative biases, hindering performance. Finally, we explore a simple fine-tuning strategy based on reinforcement learning: its results suggest that proactiveness can be learned, even generalizing to unseen scenarios. We publicly release ProactiveBench as a first step toward building proactive multimodal models.}
+}
+
+@inproceedings{das2026rrg,
+  bibtex_show={true},
+  preview={rrg.png},
+  title={Personalizing MLLMs via Reinforced Multimodal Reference Game},
+  author={Das, Deepayan and Talon, Davide and Wang, Yiming and Mancini, Massimiliano and Ricci, Elisa},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2026},
+  html={https://arxiv.org/abs/2606.28845},
+  pdf={https://arxiv.org/pdf/2606.28845},
+  selected={false},
+  abstract={Personalizing Multimodal Large Language Models (MLLMs) aims to recognize users' unique concepts from visual data and provide personalized responses. Although prior work has shown the benefit of concept descriptions and reasoning for this task, MLLM descriptions often include information, such as state and context, that does not help and may in fact hinder the unique identification of the target concept among other visually similar items. Effective descriptions of personal concepts should instead be accurate, discriminative, and free of distracting details. To achieve such descriptions, we introduce Reinforced Reference Game (RRG), a learning framework that promotes discriminative descriptions through a novel reinforced multimodal reference game. The MLLM plays both the roles of speaker and listener in a contrastive game setting, whose goal is to effectively communicate discriminative information about a target concept. Our approach formulates a verifiable contrastive reward over hard positives (dissimilar views of the same concept) and hard negatives (visually similar but different concepts). Empirically, RRG achieves state-of-the-art across multiple tasks on three personalization benchmarks. RRG generalizes to unseen domains and outperforms existing methods based on concept descriptions and personalization-specific RL frameworks.}
+}
+
+@inproceedings{kazmierczak2026pasta,
+  bibtex_show={true},
+  preview={pasta.png},
+  title={Benchmarking XAI Explanations with Human-Aligned Evaluations},
+  author={Kazmierczak, Rémi and Azzolin, Steve and Berthier, Eloïse and Hedström, Anna and Delhomme, Patricia and Filliat, David and Bousquet, Nicolas and Frehse, Goran and Mancini, Massimiliano and Caramiaux, Baptiste and Passerini, Andrea and Franchi, Gianni},
+  booktitle={AAAI Conference on Artificial Intelligence (AAAI)},
+  year={2026},
+  pages={37491--37500},
+  html={https://arxiv.org/abs/2411.02470},
+  pdf={https://arxiv.org/pdf/2411.02470},
+  selected={false},
+  abstract={We introduce PASTA (Perceptual Assessment System for explanaTion of Artificial Intelligence), a novel human-centric framework for evaluating eXplainable AI (XAI) techniques in computer vision. Our first contribution is the creation of the PASTA-dataset, the first large-scale benchmark that spans a diverse set of models and both saliency-based and concept-based explanation methods. This dataset enables robust, comparative analysis of XAI techniques based on human judgment. Our second contribution is an automated, data-driven benchmark that predicts human preferences using the PASTA-dataset. This scoring called PASTA-score method offers scalable, reliable, and consistent evaluation aligned with human perception. Additionally, our benchmark allows for comparisons between explanations across different modalities, an aspect previously unaddressed. We then propose to apply our scoring method to probe the interpretability of existing models and to build more human interpretable XAI methods.}
+}
+
+@article{huang2026structural,
+  bibtex_show={true},
+  preview={structural_pruning.png},
+  title={Structural Pruning of Large Vision Language Models: A Comprehensive Study on Pruning Dynamics, Recovery, and Data Efficiency},
+  author={Huang, Yiran and Thede, Lukas and Mancini, Massimiliano and Xu, Wenjia and Akata, Zeynep},
+  journal={International Journal of Computer Vision},
+  volume={134},
+  number={6},
+  pages={313},
+  year={2026},
+  html={https://arxiv.org/abs/2604.24380},
+  pdf={https://arxiv.org/pdf/2604.24380},
+  code={https://github.com/YiranHuangIrene/VLMCompression},
+  selected={false},
+  abstract={While Large Vision Language Models (LVLMs) demonstrate impressive capabilities, their substantial computational and memory requirements pose deployment challenges on resource-constrained edge devices. Current parameter reduction techniques primarily involve training LVLMs from small language models, but these methods offer limited flexibility and remain computationally intensive. We study a complementary route: compressing existing LVLMs by applying structured pruning to the language model backbone, followed by lightweight recovery training. Specifically, we investigate two structural pruning paradigms: layerwise and widthwise pruning, and pair them with supervised finetuning and knowledge distillation on logits and hidden states. Additionally, we assess the feasibility of conducting recovery training with only a small fraction of the available data. Our results show that widthwise pruning generally maintains better performance in low-resource scenarios, where computational resources are limited or there is insufficient finetuning data. As for the recovery training, finetuning only the multimodal projector is sufficient at small compression levels. Furthermore, a combination of supervised finetuning and hidden-state distillation yields optimal recovery across various pruning levels. Notably, effective recovery can be achieved using just 5% of the original data, while retaining over 95% of the original performance. Through empirical study on three representative LVLM families ranging from 3B to 7B parameters, this study offers actionable insights for practitioners to compress LVLMs without extensive computation resources or sufficient data.}
+}
+
+@inproceedings{berasi2026linear,
+  bibtex_show={true},
+  preview={linear_merging.png},
+  title={Linear Model Merging Unlocks Simple and Scalable Multimodal Data Mixture Optimization},
+  author={Berasi, Davide and Farina, Matteo and Mancini, Massimiliano and Ricci, Elisa},
+  booktitle={Transactions on Machine Learning Research},
+  year={2026},
+  html={https://arxiv.org/abs/2602.04937},
+  pdf={https://arxiv.org/pdf/2602.04937},
+  code={https://github.com/BerasiDavide/mLLMs_merging_4_DMO},
+  selected={false},
+  abstract={Selecting the best data mixture is critical for successful Supervised Fine-Tuning (SFT) of Multimodal Large Language Models. However, determining the optimal mixture weights across multiple domain-specific datasets remains a significant bottleneck due to the combinatorial search space and the high cost associated with even a single training run. This is the so-called Data Mixture Optimization (DMO) problem. On the other hand, model merging unifies domain-specific experts through parameter interpolation. This strategy is efficient, as it only requires a single training run per domain, yet oftentimes leads to suboptimal models. In this work, we take the best of both worlds, studying model merging as an efficient strategy for estimating the performance of different data mixtures. We train domain-specific multimodal experts and evaluate their weighted parameter-space combinations to estimate the efficacy of corresponding data mixtures. We conduct extensive experiments on 14 multimodal benchmarks, and empirically demonstrate that the merged proxy models exhibit a high rank correlation with models trained on actual data mixtures. This decouples the search for optimal mixtures from the resource-intensive training process, thereby providing a scalable and efficient strategy for navigating the complex landscape of mixture weights.}
+}
+
+@inproceedings{orsingher2026unlearning,
+  bibtex_show={true},
+  preview={unlearning_imbalance.png},
+  title={Unlearning Under Imbalance: Benchmarking Fairness in Multimodal LLM Unlearning},
+  author={Orsingher, Lorenzo and De Min, Thomas and Mancini, Massimiliano and Talon, Davide and Ricci, Elisa},
+  booktitle={3rd Workshop and Challenge on Unlearning and Model Editing (UandMe) at ECCV 2026},
+  year={2026},
+  html={https://arxiv.org/abs/2607.21300},
+  pdf={https://arxiv.org/pdf/2607.21300},
+  website={https://lorenzoorsingher.github.io/unlearning-under-imbalance/},
+  selected={false},
+  abstract={Machine unlearning has emerged as a tool for removing personal data from trained models to comply with recent AI regulations. To evaluate unlearning effectiveness in multimodal large language models (MLLMs), prior works fine-tune models on fictitious identities, simulating unlearning requests on subsets of these IDs, which are typically uniformly distributed. However, in realistic scenarios, people from different demographic groups may request to be unlearned at different frequencies, potentially altering the model's internal beliefs for these groups and leading to biased behaviors. To fill this gap, we propose FAIRGET, the first Visual Question Answering benchmark that evaluates unlearning under unbalanced, realistic, forget requests. These requests are designed to simulate multiple realistic scenarios, ranging from simple to challenging settings, that lead to biased unlearned models if fairness is not accounted for. Additionally, we propose FAUN, the first unlearning algorithm for MLLMs that forgets unlearning data while preserving model fairness. FAUN exploits a bias-aware activation steering mechanism to unlearn identities while accounting for the unbalanced nature of the forget data. Experiments on FAIRGET and the established FIUBench demonstrate our method's superiority both in unlearning quality and fairness.}
+}
+
+@inproceedings{conti2025apex,
+  bibtex_show={true},
+  preview={apex.png},
+  title={Automatic benchmarking of large multimodal models via iterative experiment programming},
+  author={Conti, Alessandro and Fini, Enrico and Rota, Paolo and Wang, Yiming and Mancini, Massimiliano and Ricci, Elisa},
+  booktitle={International Conference on Image Analysis and Processing (ICIAP)},
+  year={2025},
+  html={https://arxiv.org/abs/2406.12321},
+  pdf={https://arxiv.org/pdf/2406.12321},
+  code={https://github.com/altndrr/apex},
+  note={(Oral)},
+  selected={false},
+  abstract={Assessing the capabilities of large multimodal models (LMMs) often requires the creation of ad-hoc evaluations. Currently, building new benchmarks requires tremendous amounts of manual work for each specific analysis. This makes the evaluation process tedious and costly. In this paper, we present APEx, Automatic Programming of Experiments, the first framework for automatic benchmarking of LMMs. Given a research question expressed in natural language, APEx leverages a large language model (LLM) and a library of pre-specified tools to generate a set of experiments for the model at hand, and progressively compile a scientific report. The report drives the testing procedure: based on the current status of the investigation, APEx chooses which experiments to perform and whether the results are sufficient to draw conclusions. Finally, the LLM refines the report, presenting the results to the user in natural language. Thanks to its modularity, our framework is flexible and extensible as new tools become available. Empirically, APEx reproduces the findings of existing studies while allowing for arbitrary analyses and hypothesis testing.}
+}
+
+@inproceedings{huang2025investigating,
+  bibtex_show={true},
+  preview={investigating_pruning.png},
+  title={Investigating Structural Pruning and Recovery Techniques for Compressing Multimodal Large Language Models: An Empirical Study},
+  author={Huang, Yiran and Thede, Lukas and Mancini, Massimiliano and Xu, Wenjia and Akata, Zeynep},
+  booktitle={DAGM German Conference on Pattern Recognition (GCPR)},
+  year={2025},
+  html={https://arxiv.org/abs/2507.20749},
+  pdf={https://arxiv.org/pdf/2507.20749},
+  code={https://github.com/YiranHuangIrene/VLMCompression},
+  note={(Oral)},
+  selected={false},
+  abstract={While Multimodal Large Language Models (MLLMs) demonstrate impressive capabilities, their substantial computational and memory requirements pose significant barriers to practical deployment. Current parameter reduction techniques primarily involve training MLLMs from Small Language Models (SLMs), but these methods offer limited flexibility and remain computationally intensive. To address this gap, we propose to directly compress existing MLLMs through structural pruning combined with efficient recovery training. Specifically, we investigate two structural pruning paradigms, layerwise and widthwise pruning, applied to the language model backbone of MLLMs, alongside supervised finetuning and knowledge distillation. Additionally, we assess the feasibility of conducting recovery training with only a small fraction of the available data. Our results show that widthwise pruning generally maintains better performance in low-resource scenarios with limited computational resources or insufficient finetuning data. As for the recovery training, finetuning only the multimodal projector is sufficient at small compression levels (below 20%). Furthermore, a combination of supervised finetuning and hidden-state distillation yields optimal recovery across various pruning levels. Notably, effective recovery can be achieved with as little as 5% of the original training data, while retaining over 95% of the original performance. Through empirical study on two representative MLLMs, i.e., LLaVA-v1.5-7B and Bunny-v1.0-3B, this study offers actionable insights for practitioners aiming to compress MLLMs effectively without extensive computation resources or sufficient data.}
+}
+
+@inproceedings{conti2025openworld,
+  bibtex_show={true},
+  preview={openworld.png},
+  title={On Large Multimodal Models as Open-World Image Classifiers},
+  author={Conti, Alessandro and Mancini, Massimiliano and Fini, Enrico and Wang, Yiming and Rota, Paolo and Ricci, Elisa},
+  booktitle={International Computer Vision Conference (ICCV)},
+  year={2025},
+  html={https://openaccess.thecvf.com/content/ICCV2025/html/Conti_On_Large_Multimodal_Models_as_Open-World_Image_Classifiers_ICCV_2025_paper.html},
+  pdf={https://openaccess.thecvf.com/content/ICCV2025/papers/Conti_On_Large_Multimodal_Models_as_Open-World_Image_Classifiers_ICCV_2025_paper.pdf},
+  code={https://github.com/altndrr/lmms-owc},
+  selected={false},
+  abstract={Traditional image classification requires a predefined list of semantic categories. In contrast, Large Multimodal Models (LMMs) can sidestep this requirement by classifying images directly using natural language (e.g., answering the prompt 'What is the main object in the image?'). Despite this remarkable capability, most existing studies on LMM classification performance are surprisingly limited in scope, often assuming a closed-world setting with a predefined set of categories. In this work, we address this gap by thoroughly evaluating LMM classification performance in a truly open-world setting. We first formalize the task and introduce an evaluation protocol, defining various metrics to assess the alignment between predicted and ground truth classes. We then evaluate 13 models across 10 benchmarks, encompassing prototypical, non-prototypical, fine-grained, and very fine-grained classes, demonstrating the challenges LMMs face in this task. Further analyses based on the proposed metrics reveal the types of errors LMMs make, highlighting challenges related to granularity and fine-grained capabilities, showing how tailored prompting and reasoning can alleviate them.}
+}
+
+@inproceedings{das2025r2p,
+  bibtex_show={true},
+  preview={r2p.png},
+  title={Training-Free Personalization via Retrieval and Reasoning on Fingerprints},
+  author={Das, Deepayan and Talon, Davide and Wang, Yiming and Mancini, Massimiliano and Ricci, Elisa},
+  booktitle={International Computer Vision Conference (ICCV)},
+  year={2025},
+  html={https://openaccess.thecvf.com/content/ICCV2025/html/Das_Training-Free_Personalization_via_Retrieval_and_Reasoning_on_Fingerprints_ICCV_2025_paper.html},
+  pdf={https://openaccess.thecvf.com/content/ICCV2025/papers/Das_Training-Free_Personalization_via_Retrieval_and_Reasoning_on_Fingerprints_ICCV_2025_paper.pdf},
+  code={https://github.com/deepayan137/R2P},
+  selected={false},
+  abstract={Vision Language Models (VLMs) have lead to major improvements in multimodal reasoning, yet they still struggle to understand user-specific concepts. Existing personalization methods address this limitation but heavily rely on training procedures, that can be either costly or unpleasant to individual users. We depart from existing work, and for the first time explore the training-free setting in the context of personalization. We propose a novel method, Retrieval and Reasoning for Personalization (R2P), leveraging internal knowledge of VLMs. First, we leverage VLMs to extract the concept fingerprint, i.e., key attributes uniquely defining the concept within its semantic class. When a query arrives, the most similar fingerprints are retrieved and scored via chain-of-thought-reasoning. To reduce the risk of hallucinations, the scores are validated through cross-modal verification at the attribute level: in case of a discrepancy between the scores, R2P refines the concept association via pairwise multimodal matching, where the retrieved fingerprints and their images are directly compared with the query. We validate R2P on two publicly available benchmarks and a newly introduced dataset, Personal Concepts with Visual Ambiguity (PerVA), for concept identification highlighting challenges in visual ambiguity. R2P consistently outperforms state-of-the-art approaches on various downstream tasks across all benchmarks.}
+}
+
+@inproceedings{rai2025dualstream,
+  bibtex_show={true},
+  preview={dualstream.png},
+  title={Dual-Stream Adapters for Open-Set Segmentation in Driving Scenes},
+  author={Rai, Shyam Nandan and Mancini, Massimiliano and Caputo, Barbara and Masone, Carlo},
+  booktitle={British Machine Vision Conference (BMVC)},
+  year={2025},
+  html={https://proceedings.bmvc.org.uk/proceedings/603/},
+  pdf={https://bmva-archive.org.uk/bmvc/2025/assets/papers/Paper_603/paper.pdf},
+  selected={false}
+}
+
+@article{zanella2025baglm,
+  bibtex_show={true},
+  preview={baglm.png},
+  title={Training-free Online Video Step Grounding},
+  author={Zanella, Luca and Mancini, Massimiliano and Wang, Yiming and Tonioni, Alessio and Ricci, Elisa},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2025},
+  html={https://arxiv.org/abs/2510.16989},
+  pdf={https://arxiv.org/pdf/2510.16989},
+  website={https://lucazanella.github.io/baglm/},
+  selected={false},
+  abstract={Given a task and a set of steps composing it, Video Step Grounding (VSG) aims to detect which steps are performed in a video. Standard approaches for this task require a labeled training set (e.g., with step-level annotations or narrations), which may be costly to collect. Moreover, they process the full video offline, limiting their applications for scenarios requiring online decisions. Thus, in this work, we explore how to perform VSG online and without training. We achieve this by exploiting the zero-shot capabilities of recent Large Multimodal Models (LMMs). In particular, we use LMMs to predict the step associated with a restricted set of frames, without access to the whole video. We show that this online strategy without task-specific tuning outperforms offline and training-based models. Motivated by this finding, we develop Bayesian Grounding with Large Multimodal Models (BaGLM), further injecting knowledge of past frames into the LMM-based predictions. BaGLM exploits Bayesian filtering principles, modeling step transitions via (i) a dependency matrix extracted through large language models and (ii) an estimation of step progress. Experiments on three datasets show superior performance of BaGLM over state-of-the-art training-based offline methods.}
+}
+
+@article{dinca2025gradbias,
+  bibtex_show={true},
+  preview={gradbias.png},
+  title={GradBias: Unveiling Word Influence on Bias in Text-to-Image Generative Models},
+  author={D'Incà, Moreno and Peruzzo, Elia and Mancini, Massimiliano and Xu, Xingqian and Shi, Humphrey and Sebe, Nicu},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume={47},
+  number={11},
+  pages={9863--9875},
+  year={2025},
+  doi={10.1109/TPAMI.2025.3592901},
+  html={https://arxiv.org/abs/2408.16700},
+  pdf={https://arxiv.org/pdf/2408.16700},
+  code={https://github.com/Moreno98/GradBias},
+  selected={false},
+  abstract={Recent progress in Text-to-Image (T2I) generative models has enabled high-quality image generation. As performance and accessibility increase, these models are gaining significant attraction and popularity: ensuring their fairness and safety is a priority to prevent the dissemination and perpetuation of biases. However, existing studies in bias detection focus on closed sets of predefined biases (e.g., gender, ethnicity). In this paper, we propose a general framework to identify, quantify, and explain biases in an open set setting, i.e. without requiring a predefined set. This pipeline leverages a Large Language Model (LLM) to propose biases starting from a set of captions. Next, these captions are used by the target generative model for generating a set of images. Finally, Vision Question Answering (VQA) is leveraged for bias evaluation. We show two variations of this framework: OpenBias and GradBias. OpenBias detects and quantifies biases, while GradBias determines the contribution of individual prompt words on biases. OpenBias effectively detects both well-known and novel biases related to people, objects, and animals and highly aligns with existing closed-set bias detection methods and human judgment. GradBias shows that neutral words can significantly influence biases and it outperforms several baselines, including state-of-the-art foundation models.}
+}
+
+@inproceedings{demin2025group,
+  bibtex_show={true},
+  preview={group_unlearning.png},
+  title={Group-robust Machine Unlearning},
+  author={De Min, Thomas and Roy, Subhankar and Lathuilière, Stéphane and Ricci, Elisa and Mancini, Massimiliano},
+  booktitle={Transactions on Machine Learning Research},
+  year={2025},
+  html={https://arxiv.org/abs/2503.09330},
+  pdf={https://arxiv.org/pdf/2503.09330},
+  code={https://github.com/tdemin16/group-robust_machine_unlearning},
+  selected={false},
+  abstract={Machine unlearning is an emerging paradigm to remove the influence of specific training data (i.e., the forget set) from a model while preserving its knowledge of the rest of the data (i.e., the retain set). Previous approaches assume the forget data to be uniformly distributed from all training datapoints. However, if the data to unlearn is dominant in one group (e.g., ethnicity, gender), we empirically show that performance for this group degrades, leading to fairness issues. To perform unlearning while preserving fairness, this work addresses the overlooked problem of non-uniformly distributed forget sets, which we refer to as group-robust machine unlearning. We formalize the problem and present a simple and effective exact unlearning strategy that mitigates the performance loss in dominant groups via sample distribution reweighting. Moreover, we present MIU (Mutual Information-aware Machine Unlearning), the first approach for group robustness in approximate machine unlearning. MIU minimizes the mutual information between model features and group information, achieving unlearning while reducing performance degradation in the dominant group of the forget set. Additionally, MIU exploits sample distribution reweighting and mutual information calibration with the original model to preserve group robustness. We conduct experiments on three datasets and show that MIU outperforms standard methods, achieving unlearning without compromising model robustness.}
+}
+
+@article{fechner2024influence,
+  bibtex_show={true},
+  title={The Influence of Intentions on Dream Content},
+  author={Fechner, Julia and Born, Maren and Mancini, Massimiliano and Akata, Zeynep and Haag, Philipp and Diekelmann, Susanne and Born, Jan},
+  journal={Sleep Advances},
+  volume={5},
+  number={1},
+  pages={zpae088},
+  year={2024},
+  doi={10.1093/sleepadvances/zpae088},
+  html={https://academic.oup.com/sleepadvances/article/5/1/zpae088/7912101},
+  pdf={https://pmc.ncbi.nlm.nih.gov/articles/PMC11697393/pdf/zpae088.pdf},
+  selected={false},
+  abstract={Study Objectives: The Zeigarnik effect refers to the phenomenon where future intentions are remembered effectively only as long as they are not executed. This study investigates whether these intentions, which remain active during sleep, influence dream content. Methods: After an adaptation night, each of the 19 participants (10 women and 9 men) received three different task plans in the evening before the experimental night, each describing how to perform specific tasks. One of the task plans (completed) was then to be executed before the sleep period, another task (uncompleted) was told to be executed in the next morning, and on the third task (interrupted) participants were interrupted during the enactment before sleep and told to resume it the next morning. Polysomnography and multiple awakenings were conducted, resulting in 86 dream reports, 36 in NREM stage 2, and 50 in rapid eye movement sleep. After a traditional rating-based analysis of dream reports yielded inconsistent results, we analyzed the reports using a transformer-based assessment of dream incorporation, which quantified the semantic similarity between the dreams and pre-sleep tasks. Results: The number of dreams showing above-criterion similarity to the respective task was significantly lower for the completed than the uncompleted or interrupted tasks. This pattern was confirmed through a forced choice approach, where, based on the similarity of single sentences of the dream reports, each dream report was allocated to one of the three task plans. Conclusions: Active intentions increase the likelihood of dream content being semantically similar to these intentions.}
+}
+
+@inproceedings{cermelli2019rgbd,
+  bibtex_show={true},
+  preview={rgbd_triathlon.png},
+  title={The RGB-D Triathlon: Towards Agile Visual Toolboxes for Robots},
+  author={Cermelli, Fabio and Mancini, Massimiliano and Ricci, Elisa and Caputo, Barbara},
+  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year={2019},
+  html={https://arxiv.org/abs/1904.00912},
+  pdf={https://arxiv.org/pdf/1904.00912},
+  selected={false},
+  abstract={Deep networks have brought significant advances in robot perception, enabling to improve the capabilities of robots in several visual tasks, ranging from object detection and recognition to pose estimation, semantic scene segmentation and many others. Still, most approaches typically address visual tasks in isolation, resulting in overspecialized models which achieve strong performances in specific applications but work poorly in other (often related) tasks. This is clearly sub-optimal for a robot which is often required to perform simultaneously multiple visual recognition tasks in order to properly act and interact with the environment. This problem is exacerbated by the limited computational and memory resources typically available onboard to a robotic platform. The problem of learning flexible models which can handle multiple tasks in a lightweight manner has recently gained attention in the computer vision community and benchmarks supporting this research have been proposed. In this work we study this problem in the robot vision context, proposing a new benchmark, the RGB-D Triathlon, and evaluating state of the art algorithms in this novel challenging scenario. We also define a new evaluation protocol, better suited to the robot vision setting. Results shed light on the strengths and weaknesses of existing approaches and on open issues, suggesting directions for future research.}
+}
+
 @inproceedings{liu2025test,
   bibtex_show={true},
   title={Test-time Vocabulary Adaptation for Language-driven Object Detection},
@@ -23,7 +283,8 @@
   preview={notonlytext.png},
   html={https://openaccess.thecvf.com/content/CVPR2025/html/Berasi_Not_Only_Text_Exploring_Compositionality_of_Visual_Representations_in_Vision-Language_CVPR_2025_paper.html},  
   pdf={https://openaccess.thecvf.com/content/CVPR2025/papers/Berasi_Not_Only_Text_Exploring_Compositionality_of_Visual_Representations_in_Vision-Language_CVPR_2025_paper.pdf},
-  code={https://github.com/BerasiDavide/vlm_image_compositionality.},   
+  code={https://github.com/BerasiDavide/vlm_image_compositionality.},
+  note={(Highlight)},
   selected={true},
   abstract={Vision-Language Models (VLMs) learn a shared feature space for text and images, enabling the comparison of inputs of different modalities. While prior works demonstrated that VLMs organize natural language representations into regular structures encoding composite meanings, it remains unclear if compositional patterns also emerge in the visual embedding space. In this work, we investigate compositionality in the image domain, where the analysis of compositional properties is challenged by noise and sparsity of visual data. We address these problems and propose a framework, called Geodesically Decomposable Embeddings (GDE), that approximates image representations with geometry-aware compositional structures in the latent space. We demonstrate that visual embeddings of pre-trained VLMs exhibit a compositional arrangement, and evaluate the effectiveness of this property in the tasks of compositional classification and group robustness. GDE achieves stronger performance in compositional classification compared to its counterpart method that assumes linear geometry of the latent space. Notably, it is particularly effective for group robustness, where we achieve higher results than task-specific solutions. Our results indicate that VLMs can automatically develop a human-like form of compositional reasoning in the visual domain, making their underlying processes more interpretable.}
 }
@@ -37,7 +298,8 @@
   preview={comca.png},
   html={https://openaccess.thecvf.com/content/CVPR2025/html/Garosi_Compositional_Caching_for_Training-free_Open-vocabulary_Attribute_Detection_CVPR_2025_paper.html},  
   pdf={https://openaccess.thecvf.com/content/CVPR2025/papers/Garosi_Compositional_Caching_for_Training-free_Open-vocabulary_Attribute_Detection_CVPR_2025_paper.pdf},
-  code={https://comca-attributes.github.io},   
+  code={https://comca-attributes.github.io},
+  note={(Highlight)},
   selected={true},
   abstract={Attribute detection is crucial for many computer vision tasks, as it enables systems to describe properties such as color, texture, and material. Current approaches often rely on labor-intensive annotation processes which are inherently limited: objects can be described at an arbitrary level of detail (eg, color vs. color shades), leading to ambiguities when the annotators are not instructed carefully. Furthermore, they operate within a predefined set of attributes, reducing scalability and adaptability to unforeseen downstream applications. We present Compositional Caching (ComCa), a training-free method for open-vocabulary attribute detection that overcomes these constraints. ComCa requires only the list of target attributes and objects as input, using them to populate an auxiliary cache of images by leveraging web-scale databases and Large Language Models to determine attribute-object compatibility. To account for the compositional nature of attributes, cache images receive soft attribute labels. Those are aggregated at inference time based on the similarity between the input and cache images, refining the predictions of underlying Vision-Language Models (VLMs). Importantly, our approach is model-agnostic, compatible with various VLMs. Experiments on public datasets demonstrate that ComCa significantly outperforms zero-shot and cache-based baselines, competing with recent training-based methods, proving that a carefully designed training-free approach can successfully address open-vocabulary attribute detection.}
 }
@@ -185,6 +447,7 @@
   organization={IEEE},
   preview={3dv2019.png},
   html={https://ieeexplore.ieee.org/abstract/document/8885979},
+  note={(Oral)},
   selected={false},
   abstract={Motivated by recent advances in deep domain adaptation, this paper introduces a deep architecture for estimating 3D keypoints when the training (source) and the test (target) images greatly differ in terms of visual appearance (domain shift). Our approach operates by promoting domain distribution alignment in the feature space adopting batch normalization-based techniques. Furthermore, we propose to collect statistics about 3D keypoints positions of the source training data and to use this prior information to constrain predictions on the target domain introducing a loss derived from Multidimensional Scaling. We conduct an extensive experimental evaluation considering three publicly available benchmarks and show that our approach out-performs state-of-the-art domain adaptation methods for 3D keypoints predictions.}
 }
@@ -261,7 +524,8 @@
   preview={openbias.png},
   html={https://openaccess.thecvf.com/content/CVPR2024/html/DInca_OpenBias_Open-set_Bias_Detection_in_Text-to-Image_Generative_Models_CVPR_2024_paper.html},  
   pdf={https://openaccess.thecvf.com/content/CVPR2024/papers/DInca_OpenBias_Open-set_Bias_Detection_in_Text-to-Image_Generative_Models_CVPR_2024_paper.pdf},
-  code={https://github.com/Picsart-AI-Research/OpenBias},   
+  code={https://github.com/Picsart-AI-Research/OpenBias},
+  note={(Highlight)},
   selected={true},
   abstract={Text-to-image generative models are becoming increasingly popular and accessible to the general public. As these models see large-scale deployments it is necessary to deeply investigate their safety and fairness to not disseminate and perpetuate any kind of biases. However existing works focus on detecting closed sets of biases defined a priori limiting the studies to well-known concepts. In this paper we tackle the challenge of open-set bias detection in text-to-image generative models presenting OpenBias a new pipeline that identifies and quantifies the severity of biases agnostically without access to any precompiled set. OpenBias has three stages. In the first phase we leverage a Large Language Model (LLM) to propose biases given a set of captions. Secondly the target generative model produces images using the same set of captions. Lastly a Vision Question Answering model recognizes the presence and extent of the previously proposed biases. We study the behavior of Stable Diffusion 1.5 2 and XL emphasizing new biases never investigated before. Via quantitative experiments we demonstrate that OpenBias agrees with current closed-set bias detection methods and human judgement.}
 }
@@ -395,6 +659,7 @@
   html={https://openaccess.thecvf.com/content_cvpr_2018/html/Mancini_Boosting_Domain_Adaptation_CVPR_2018_paper.html},
   pdf={https://openaccess.thecvf.com/content_cvpr_2018/papers/Mancini_Boosting_Domain_Adaptation_CVPR_2018_paper.pdf},
   code={https://github.com/mancinimassimiliano/latent_domains_DA},
+  note={(Spotlight)},
   selected={false},
   abstract={Current Domain Adaptation (DA) methods based on deep architectures assume that the source samples arise from a single distribution. However, in practice most datasets can be regarded as mixtures of multiple domains. In these cases exploiting single-source DA methods for learning target classifiers may lead to sub-optimal, if not poor, results. In addition, in many applications it is difficult to manually provide the domain labels for all source data points, ie latent domains should be automatically discovered. This paper introduces a novel Convolutional Neural Network (CNN) architecture which (i) automatically discovers latent domains in visual datasets and (ii) exploits this information to learn robust target classifiers. Our approach is based on the introduction of two main components, which can be embedded into any existing CNN architecture:(i) a side branch that automatically computes the assignment of a source sample to a latent domain and (ii) novel layers that exploit domain membership information to appropriately align the distribution of the CNN internal feature representations to a reference distribution. We test our approach on publicly-available datasets, showing that it outperforms state-of-the-art multi-source DA methods by a large margin.},
 }
@@ -707,9 +972,10 @@ year = {2019},
   journal={Advances in Neural Information Processing Systems (NeurIPS)},
   year={2022},
   preview={neurips2022.png},
-  html={https://proceedings.neurips.cc/paper_files/paper/2022/hash/c9f95e9ec39fa5ad3d0a562b993b92aa-Abstract-Conference.html},  
+  html={https://proceedings.neurips.cc/paper_files/paper/2022/hash/c9f95e9ec39fa5ad3d0a562b993b92aa-Abstract-Conference.html},
   pdf={https://proceedings.neurips.cc/paper_files/paper/2022/file/c9f95e9ec39fa5ad3d0a562b993b92aa-Paper-Conference.pdf},
-  code={https://github.com/abhrac/relational-proxies},   
+  code={https://github.com/abhrac/relational-proxies},
+  note={(Spotlight)},
   selected={false},
   abstract={Fine-grained categories that largely share the same set of parts cannot be discriminated based on part information alone, as they mostly differ in the way the local parts relate to the overall global structure of the object. We propose Relational Proxies, a novel approach that leverages the relational information between the global and local views of an object for encoding its semantic label. Starting with a rigorous formalization of the notion of distinguishability between fine-grained categories, we prove the necessary and sufficient conditions that a model must satisfy in order to learn the underlying decision boundaries in the fine-grained setting. We design Relational Proxies based on our theoretical findings and evaluate it on seven challenging fine-grained benchmark datasets and achieve state-of-the-art results on all of them, surpassing the performance of all existing works with a margin exceeding 4% in some cases. We also experimentally validate our theory on fine-grained distinguishability and obtain consistent results across multiple benchmarks.}
 }
@@ -869,6 +1135,7 @@ year = {2019},
   preview={taskcv2018.png},
   html={https://www.editricesapienza.it/book/8223},
   pdf={https://arxiv.org/pdf/2012.09058},
+  note={(Best Paper Award Honorable Mention)},
   selected={false},
   abstract={Visual recognition algorithms are required today to exhibit adaptive abilities. Given a deep model trained on a specific, given task, it would be highly desirable to be able to adapt incrementally to new tasks, preserving scalability as the number of new tasks increases, while at the same time avoiding catastrophic forgetting issues. Recent work has shown that masking the internal weights of a given original conv-net through learned binary variables is a promising strategy. We build upon this intuition and take into account more elaborated affine transformations of the convolutional weights that include learned binary masks. We show that with our generalization it is possible to achieve significantly higher levels of adaptation to new tasks, enabling the approach to compete with fine tuning strategies by requiring slightly more than 1 bit per network parameter per additional task. Experiments on two popular benchmarks showcase the power of our approach, that achieves the new state of the art on the Visual Decathlon Challenge.}
 }
@@ -912,7 +1179,8 @@ year = {2019},
   preview={cvpr2019.png},
   html={https://openaccess.thecvf.com/content_CVPR_2019/html/Mancini_AdaGraph_Unifying_Predictive_and_Continuous_Domain_Adaptation_Through_Graphs_CVPR_2019_paper.html},  
   pdf={https://openaccess.thecvf.com/content_CVPR_2019/papers/Mancini_AdaGraph_Unifying_Predictive_and_Continuous_Domain_Adaptation_Through_Graphs_CVPR_2019_paper.pdf},
-  code={https://github.com/mancinimassimiliano/adagraph},   
+  code={https://github.com/mancinimassimiliano/adagraph},
+  note={(Oral)},
   selected={false},
   abstract={The ability to categorize is a cornerstone of visual intelligence, and a key functionality for artificial, autonomous visual machines. This problem will never be solved without algorithms able to adapt and generalize across visual domains. Within the context of domain adaptation and generalization, this paper focuses on the predictive domain adaptation scenario, namely the case where no target data are available and the system has to learn to generalize from annotated source images plus unlabeled samples with associated metadata from auxiliary domains. Our contribution is the first deep architecture that tackles predictive domain adaptation, able to leverage over the information brought by the auxiliary domains through a graph. Moreover, we present a simple yet effective strategy that allows us to take advantage of the incoming target data at test time, in a continuous domain adaptation scenario. Experiments on three benchmark databases support the value of our approach.}
 }
