@@ -38,14 +38,14 @@
       description:
         - within the Explainable Machine Learning group of Prof. Zeynep Akata
 
-    - title: Visiting Ph.D. student 
+    - title: Visiting Ph.D. student
       institution: University of Tübingen (Tübingen, Germany)
       year: 2020
       description:
         - within the Explainable Machine Learning group of Prof. Zeynep Akata
         - part of the ELLIS exchange framework
-    
-    - title: Visiting Ph.D. student 
+
+    - title: Visiting Ph.D. student
       institution: KTH Royal Institute of Technology (Stockholm, Sweden)
       year: summer 2018
       description:
@@ -57,34 +57,34 @@
       year: 2019-2020
       description:
         - within the Visual and Multimodal Applied Learning (VANDAL) of Prof. Barbara Caputo
-    
+
     - title: Research Collaborator
       institution: Fondazione Bruno Kessler (Trento, Italy)
       year: 2017-2020
       description:
         - within the Technologies of Vision laboratory (TeV) led by Dr. Stefano Messelodi
 
-- title: Awards and Acknowledgements 
+- title: Awards and Acknowledgements
   type: nested_list
   contents:
     - title: Outstanding editor
       items:
         - ICRA 2024
 
-    - title: Outstanding reviewer 
+    - title: Outstanding reviewer
       items:
         - CVPR 2019, 2021, 2022
         - ICCV 2019, 2021
         - ICML 2022
         - NeurIPS 2023
-        - WACV 2024 
+        - WACV 2024
 
     - title: Ph.D. Thesis Award 2020
-      items: 
+      items:
         - Awarded to the best Ph.D. theses defended at the Sapienza University of Rome between January 2017 and December 2020.
     - title: Best Paper Award Honorable mention
-      items: 
-        - ECCV 2018 Workshop on Transferring and Adapting Source Knowledge in Computer Vision 
+      items:
+        - ECCV 2018 Workshop on Transferring and Adapting Source Knowledge in Computer Vision
         - For the work "Adding New Tasks to a Single Network with Weight Transformations using Binary Masks"
     - title: Reading group competiton winner
       items:
@@ -120,22 +120,21 @@
         - ICRA 2024-25
         - CVPR 2024-25
         - ECCV 2024
-        - NeurIPS 2024-25 
-    
+        - NeurIPS 2024-25
+
     - title: Reviewer for
       items:
         - <u>Journals:</u> IEEE T-PAMI, IJCV, T-IP, TMM, CVIU, MVA, IEEE RA-L, IEEE T-RO, TMLR, IEEE T-NN, Pattern Recognition, Neural Networks, IET Computer Vision, Frontiers in CS, Engineering Reports, IJMLC.
         - <u>Conferences:</u> CVPR, ICCV, ECCV, NeurIPS, ICLR, ICML, AAAI, ICRA, IROS, ACM-MM, ICPR, ACCV, GCPR, WACV, BMVC, CoLLAs, CAI.
-    
+
     - title: Evaluator for
       items:
         - IMPRS-IS (2021-2023)
         - ELLIS PhD program (2022)
-    
+
     - title: Student volunteer for
       items:
         - ICCV 2017
-
 
 - title: Organization
   type: nested_list
@@ -153,12 +152,12 @@
         - Explainability in Machine Learning Workshop (Tübingen, March 2023)
         - 1st Workshop on Green Foundation Models (at ECCV 2024)
         - ItalNet, Connecting the early career Italian computer vision and pattern recognition community (at ICIAP 2025)
-    
+
     - title: Tutorials
       items:
         - "Transferring Knowledge Across Domains: an Introduction to Deep Domain Adaptation (at ICIAP 2019)"
         - "Visual Recognition Beyond the Comfort Zone: Adapting to Unseen Concepts on the Fly (at ICCV 2023)"
-    
+
     - title: Symposium
       items:
         - Computer Vision Trento Symposium (Trento, June 2024)
@@ -173,7 +172,7 @@
     - title: Open World Compositional Zero-Shot Learning
       institution: EPFL Computer vision talks
       year: 2021
-    
+
     - title: Compositional Zero-Shot Learning
       institution: 2D3DAI
       year: 2021
@@ -197,7 +196,7 @@
     - title: "Opening multimodal doors with language: from recognition to bias detection"
       institution: 7th Multimodal Learning and Applications Workshop (at CVPR 2024)
       year: 2024
-    
+
     - title: "From zero-shot learning to training-free generalization"
       institution: AIxIA International Summer School on Advances in Artificial Intelligence
       year: 2024
@@ -209,8 +208,7 @@
     - title: "Compositional Representations in Vision-Language Models"
       institution: Department of Humanities, University of Macerata, Macerata (Italy)
       year: 2025
-      
-      
+
 - title: Teaching
   type: time_table
   contents:
@@ -218,7 +216,7 @@
       institution: University of Tübingen
       year: Oct.-Dec. 2021
       description: MSc and BSc, 28 hours, 3 credits.
-    
+
     - title: Visual Recognition beyond the Closed World
       institution: IECS Doctoral School, University of Trento
       year: Aug.-Sep. 2023

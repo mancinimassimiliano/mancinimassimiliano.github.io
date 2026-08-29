@@ -126,7 +126,7 @@ serve + content checks) is the verification loop for this project.
   build dies with `cannot load such file -- ostruct` before rendering
   anything. `ruby@3.3` still bundles it.
 - **Locale matters more than it looks.** The `invalid byte sequence in
-  US-ASCII` failure happens deep in `bibtex-ruby`'s lexer while parsing
+US-ASCII` failure happens deep in `bibtex-ruby`'s lexer while parsing
   `_bibliography/*.bib`, not at startup - easy to mistake for a corrupt
   bib file. It's purely `$LANG`/`$LC_ALL` being unset/`C`.
 - **`bundle exec jekyll serve &` backgrounding doesn't `kill` cleanly
@@ -155,7 +155,7 @@ serve + content checks) is the verification loop for this project.
   `PATH` (see Prerequisites) and re-run `bundle install` after removing
   `vendor/bundle` and `Gemfile.lock` (they're Ruby-version-specific).
 - **`Liquid Exception: invalid byte sequence in US-ASCII in
-  .../_layouts/about.liquid`**: `LANG`/`LC_ALL` not set to a UTF-8
+.../_layouts/about.liquid`**: `LANG`/`LC_ALL` not set to a UTF-8
   locale. Export `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8` and rebuild.
 - **`Conversion error: ... No such file or directory - jupyter`**:
   `jupyter` isn't on `PATH`. Either
