@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
- We got 2 papers accepted at <a href="https://iccv.thecvf.com/">ICCV 2025</a>! 😁 Congrats to Alessandro ("open-world" evaluation of multimodal LLMs) and Deepayan (training-free personalization)! 
+We got 2 papers accepted at <a href="https://iccv.thecvf.com/">ICCV 2025</a>! 😁 Congrats to Alessandro ("open-world" evaluation of multimodal LLMs) and Deepayan (training-free personalization)!
