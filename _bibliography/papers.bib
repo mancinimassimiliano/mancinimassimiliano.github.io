@@ -2,6 +2,34 @@
 ---
 
 
+@article{farina2026dcvlm,
+  bibtex_show={true},
+  preview={dcvlm.png},
+  title={DataComp-VLM: Improved Open Datasets for Vision-Language Models},
+  author={Farina, Matteo and Udandarao, Vishaal and Nguyen, Thao and Kuzucu, Selim and Böther, Maximilian and Hochlehnert, Andreas and Ghosh, Adhiraj and Nezhurina, Marianna and Roth, Karsten and Struber, Joschka and Zhang, Yuhui and Dziadzio, Sebastian and Sui, Elaine and Jahagirdar, Soumya and Ghosh, Dhruba and Hammoud, Hasan and De Min, Thomas and Caldarella, Simone and Mirza, Jehanzeb and Keh, Sedrick and Cherti, Mehdi and Kuehne, Hilde and Schiele, Bernt and Yeung-Levy, Serena and Naeem, Muhammad Ferjad and Tombari, Federico and Klimovic, Ana and Ricci, Elisa and Bethge, Matthias and Oh, Sewoong and Prabhu, Ameya and Tonioni, Alessio and Jitsev, Jenia and Mancini, Massimiliano and Schmidt, Ludwig and Parthasarathy, Nikhil},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2026},
+  html={https://arxiv.org/abs/2606.28551},
+  pdf={https://arxiv.org/pdf/2606.28551},
+  code={https://github.com/mlfoundations/dcvlm},
+  website={https://www.datacomp.ai/dcvlm},
+  selected={true},
+  abstract={Building performant Vision-Language Models (VLMs) requires carefully curating large-scale training datasets, yet the community lacks systematic benchmarks for evaluating such curation strategies. We introduce DataComp for VLMs (DCVLM), a benchmark for controlled data-centric experiments to improve VLM training. As part of DCVLM, we collect 160 datasets spanning four data types—image-caption pairs, multimodal interleaved documents, text-only, and instruction-tuning data—into a corpus of 6T multimodal tokens. DCVLM allows participants to test curation strategies (filtering, mixing, formatting, sampling) across 1B–8B models and 6.25B–200B token budgets. Models are then evaluated on a carefully selected suite of up to 52 downstream benchmarks across 9 domains. We conduct extensive experiments on DCVLM and find that data mixing, not filtering, is key to a high-quality training dataset: instruction-heavy mixtures scale better than caption-heavy ones, with gains widening at larger scales. The resulting dataset, DCVLM-Baseline, enables training an 8B VLM to 63.6% accuracy on our 33-task core suite with 200B training tokens. Compared to FineVision, the state-of-the-art open VLM training dataset, this represents an improvement of +5.4pp. DCVLM and all accompanying artifacts will be made publicly available.}
+}
+
+@article{dinca2026mars,
+  bibtex_show={true},
+  preview={mars.png},
+  title={Harnessing Textual Refusal Directions for Multimodal Safety},
+  author={D'Incà, Moreno and Sebe, Nicu and Mancini, Massimiliano},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2026},
+  html={https://arxiv.org/abs/2606.31876},
+  pdf={https://arxiv.org/pdf/2606.31876},
+  selected={true},
+  abstract={To improve safety in Large Language Models (LLMs) we can either perform post-training alignment or exploit refusal directions in the activation space. Both strategies are less feasible in Multimodal LLMs (MLLMs) as they require unsafe multimodal data, harder to collect than their unimodal counterpart. In this work, we relax this constraint and investigate whether textual refusal directions, extracted directly from the LLM backbone, generalize across modalities (i.e., image, video). Preliminary findings confirm this ability, though effectiveness is conditioned by layer selection, steering strength, and cross-modal alignment, with the latter causing safe multimodal inputs to be spuriously steered toward refusal. Building on this, we introduce Modality-Agnostic Refusal Steering (MARS), a light-weight training-free approach that injects multimodal safety without the need for multimodal safety data. MARS corrects modality misalignment via activation re-centering, adaptively scales steering strength within a geometrically defined trust region, and selects the optimal intervention layer, operating at the first generated token. Evaluated on five SOTA MLLMs across safety, utility, and video jailbreak benchmarks, MARS achieves consistent safety gains while preserving utility. These results reveal that safety-relevant structure is shared across modalities and that textual refusal directions are a powerful and underexplored foundation for multimodal alignment.}
+}
+
 @inproceedings{orsingher2026unlearning,
   bibtex_show={true},
   preview={unlearning_imbalance.png},
