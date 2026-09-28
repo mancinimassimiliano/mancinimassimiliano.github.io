@@ -147,6 +147,21 @@
   abstract={While Large Vision Language Models (LVLMs) demonstrate impressive capabilities, their substantial computational and memory requirements pose deployment challenges on resource-constrained edge devices. Current parameter reduction techniques primarily involve training LVLMs from small language models, but these methods offer limited flexibility and remain computationally intensive. We study a complementary route: compressing existing LVLMs by applying structured pruning to the language model backbone, followed by lightweight recovery training. Specifically, we investigate two structural pruning paradigms: layerwise and widthwise pruning, and pair them with supervised finetuning and knowledge distillation on logits and hidden states. Additionally, we assess the feasibility of conducting recovery training with only a small fraction of the available data. Our results show that widthwise pruning generally maintains better performance in low-resource scenarios, where computational resources are limited or there is insufficient finetuning data. As for the recovery training, finetuning only the multimodal projector is sufficient at small compression levels. Furthermore, a combination of supervised finetuning and hidden-state distillation yields optimal recovery across various pruning levels. Notably, effective recovery can be achieved using just 5% of the original data, while retaining over 95% of the original performance. Through empirical study on three representative LVLM families ranging from 3B to 7B parameters, this study offers actionable insights for practitioners to compress LVLMs without extensive computation resources or sufficient data.}
 }
 
+@inproceedings{dinca2026uwm,
+  bibtex_show={true},
+  preview={uwm.png},
+  title={Safe Vision-Language Models via Unsafe Weights Manipulation},
+  author={D'Incà, Moreno and Peruzzo, Elia and Xu, Xingqian and Shi, Humphrey and Sebe, Nicu and Mancini, Massimiliano},
+  booktitle={IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  pages={4682--4692},
+  year={2026},
+  html={https://openaccess.thecvf.com/content/WACV2026/html/Dinca_Safe_Vision-Language_Models_via_Unsafe_Weights_Manipulation_WACV_2026_paper.html},
+  pdf={https://openaccess.thecvf.com/content/WACV2026/papers/Dinca_Safe_Vision-Language_Models_via_Unsafe_Weights_Manipulation_WACV_2026_paper.pdf},
+  code={https://github.com/Moreno98/UWM},
+  selected={false},
+  abstract={Vision-language models (VLMs) often inherit the biases and unsafe associations present within their large-scale training dataset. While recent approaches mitigate unsafe behaviors, their evaluation focuses on how safe the model is on unsafe inputs, ignoring potential shortcomings on safe ones. In this paper, we first revise safety evaluation by introducing SafeGround, a new set of metrics that evaluate safety at different levels of granularity. With this metric, we uncover a surprising issue of training-based methods: they make the model less safe on safe inputs. From this finding, we take a different direction and explore whether it is possible to make a model safer without training, introducing Unsafe Weights Manipulation (UWM). UWM uses a calibration set of safe and unsafe instances to compare activations between safe and unsafe content, identifying the most important parameters for processing the latter. Their values are then manipulated via negation. Experiments show that UWM achieves the best tradeoff between safety and knowledge preservation, consistently improving VLMs on unsafe queries while outperforming even training-based state-of-the-art methods on safe ones.}
+}
+
 
 
 @inproceedings{conti2025apex,
