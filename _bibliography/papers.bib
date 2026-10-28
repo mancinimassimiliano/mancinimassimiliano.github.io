@@ -30,6 +30,20 @@
   abstract={To improve safety in Large Language Models (LLMs) we can either perform post-training alignment or exploit refusal directions in the activation space. Both strategies are less feasible in Multimodal LLMs (MLLMs) as they require unsafe multimodal data, harder to collect than their unimodal counterpart. In this work, we relax this constraint and investigate whether textual refusal directions, extracted directly from the LLM backbone, generalize across modalities (i.e., image, video). Preliminary findings confirm this ability, though effectiveness is conditioned by layer selection, steering strength, and cross-modal alignment, with the latter causing safe multimodal inputs to be spuriously steered toward refusal. Building on this, we introduce Modality-Agnostic Refusal Steering (MARS), a light-weight training-free approach that injects multimodal safety without the need for multimodal safety data. MARS corrects modality misalignment via activation re-centering, adaptively scales steering strength within a geometrically defined trust region, and selects the optimal intervention layer, operating at the first generated token. Evaluated on five SOTA MLLMs across safety, utility, and video jailbreak benchmarks, MARS achieves consistent safety gains while preserving utility. These results reveal that safety-relevant structure is shared across modalities and that textual refusal directions are a powerful and underexplored foundation for multimodal alignment.}
 }
 
+@inproceedings{kolli2026contextbias,
+  bibtex_show={true},
+  preview={contextbias.png},
+  title={ContextBias: Controlled Evaluation of Bias Persistence Under Context Shift in Text-to-Image Models},
+  author={Kolli, Shaghayegh and Emami, Sina and D'Incà, Moreno and Nejadi, Pouyan and Sebe, Nicu and Mancini, Massimiliano and Diesner, Jana},
+  booktitle={Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year={2026},
+  html={https://aclanthology.org/2026.emnlp-main.2292/},
+  pdf={https://aclanthology.org/2026.emnlp-main.2292.pdf},
+  code={https://github.com/Sina-Emami/ContextBias},
+  selected={false},
+  abstract={Text-to-image models learn associations between concepts - in the case of this paper, people's professions, which we refer to as roles - and visual attributes. These associations can underpin many observed forms of stereotypical bias. A key open question in this area is whether these associations are stable or change when visual representations of people in professional roles are placed in different prompted contexts. We introduce ContextBias, a controlled evaluation framework, and ContextBench, a benchmark spanning 92 roles and 1,656 semantically controlled prompts, designed to isolate the effect of contextual variation on role-linked visual representations. Evaluating four state-of-the-art models on 66,240 generated images, we find that placing a role in a semantically unrelated context does not suppress role-linked attributes; instead, cross-role attribute concentration increases (pooled BI +0.047). Demographic cues, characteristic garments, and role-specific tools remain highly prevalent across context-free, related, and unrelated conditions, and are robust to semantic prompt reformulation. Scene composition and camera framing show the greatest context-sensitivity. These findings reveal a form of stereotypical persistence that remains largely invisible to context-free evaluations, highlighting the need for controlled contextual variation in bias benchmarking.}
+}
+
 @inproceedings{orsingher2026unlearning,
   bibtex_show={true},
   preview={unlearning_imbalance.png},
