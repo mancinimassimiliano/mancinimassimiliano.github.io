@@ -1,4 +1,31 @@
 /*******************************************************************************
+ * Text and social icons under the profile picture (home page)
+ ******************************************************************************/
+
+.profile .more-info {
+  text-align: center;
+}
+
+.profile-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 0.6rem 0 1rem;
+  font-size: 1.6rem;
+
+  a {
+    color: var(--global-text-color);
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
+/*******************************************************************************
  * Team page and home-page team strip
  ******************************************************************************/
 
