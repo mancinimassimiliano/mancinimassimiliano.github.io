@@ -95,7 +95,7 @@
   year={2026},
   html={https://arxiv.org/abs/2606.28845},
   pdf={https://arxiv.org/pdf/2606.28845},
-  selected={true},
+  selected={false},
   abstract={Personalizing Multimodal Large Language Models (MLLMs) aims to recognize users' unique concepts from visual data and provide personalized responses. Although prior work has shown the benefit of concept descriptions and reasoning for this task, MLLM descriptions often include information, such as state and context, that does not help and may in fact hinder the unique identification of the target concept among other visually similar items. Effective descriptions of personal concepts should instead be accurate, discriminative, and free of distracting details. To achieve such descriptions, we introduce Reinforced Reference Game (RRG), a learning framework that promotes discriminative descriptions through a novel reinforced multimodal reference game. The MLLM plays both the roles of speaker and listener in a contrastive game setting, whose goal is to effectively communicate discriminative information about a target concept. Our approach formulates a verifiable contrastive reward over hard positives (dissimilar views of the same concept) and hard negatives (visually similar but different concepts). Empirically, RRG achieves state-of-the-art across multiple tasks on three personalization benchmarks. RRG generalizes to unseen domains and outperforms existing methods based on concept descriptions and personalization-specific RL frameworks.}
 }
 
@@ -290,7 +290,7 @@
   html={https://arxiv.org/abs/2503.09330},
   pdf={https://arxiv.org/pdf/2503.09330},
   code={https://github.com/tdemin16/group-robust_machine_unlearning},
-  selected={true},
+  selected={false},
   abstract={Machine unlearning is an emerging paradigm to remove the influence of specific training data (i.e., the forget set) from a model while preserving its knowledge of the rest of the data (i.e., the retain set). Previous approaches assume the forget data to be uniformly distributed from all training datapoints. However, if the data to unlearn is dominant in one group (e.g., ethnicity, gender), we empirically show that performance for this group degrades, leading to fairness issues. To perform unlearning while preserving fairness, this work addresses the overlooked problem of non-uniformly distributed forget sets, which we refer to as group-robust machine unlearning. We formalize the problem and present a simple and effective exact unlearning strategy that mitigates the performance loss in dominant groups via sample distribution reweighting. Moreover, we present MIU (Mutual Information-aware Machine Unlearning), the first approach for group robustness in approximate machine unlearning. MIU minimizes the mutual information between model features and group information, achieving unlearning while reducing performance degradation in the dominant group of the forget set. Additionally, MIU exploits sample distribution reweighting and mutual information calibration with the original model to preserve group robustness. We conduct experiments on three datasets and show that MIU outperforms standard methods, achieving unlearning without compromising model robustness.}
 }
 
@@ -362,7 +362,7 @@
   pdf={https://openaccess.thecvf.com/content/CVPR2025/papers/Garosi_Compositional_Caching_for_Training-free_Open-vocabulary_Attribute_Detection_CVPR_2025_paper.pdf},
   code={https://comca-attributes.github.io},
   note={(Highlight)},
-  selected={true},
+  selected={false},
   abstract={Attribute detection is crucial for many computer vision tasks, as it enables systems to describe properties such as color, texture, and material. Current approaches often rely on labor-intensive annotation processes which are inherently limited: objects can be described at an arbitrary level of detail (eg, color vs. color shades), leading to ambiguities when the annotators are not instructed carefully. Furthermore, they operate within a predefined set of attributes, reducing scalability and adaptability to unforeseen downstream applications. We present Compositional Caching (ComCa), a training-free method for open-vocabulary attribute detection that overcomes these constraints. ComCa requires only the list of target attributes and objects as input, using them to populate an auxiliary cache of images by leveraging web-scale databases and Large Language Models to determine attribute-object compatibility. To account for the compositional nature of attributes, cache images receive soft attribute labels. Those are aggregated at inference time based on the similarity between the input and cache images, refining the predictions of underlying Vision-Language Models (VLMs). Importantly, our approach is model-agnostic, compatible with various VLMs. Experiments on public datasets demonstrate that ComCa significantly outperforms zero-shot and cache-based baselines, competing with recent training-based methods, proving that a carefully designed training-free approach can successfully address open-vocabulary attribute detection.}
 }
 
@@ -376,7 +376,7 @@
   html={https://openaccess.thecvf.com/content/CVPR2025/html/Guimard_Classifier-to-Bias_Toward_Unsupervised_Automatic_Bias_Detection_for_Visual_Classifiers_CVPR_2025_paper.html},  
   pdf={https://openaccess.thecvf.com/content/CVPR2025/papers/Guimard_Classifier-to-Bias_Toward_Unsupervised_Automatic_Bias_Detection_for_Visual_Classifiers_CVPR_2025_paper.pdf},
   code={https://github.com/mardgui/C2B},   
-  selected={true},
+  selected={false},
   abstract={A person downloading a pre-trained model from the web should be aware of its biases. Existing approaches for bias identification rely on datasets containing labels for the task of interest, something that a non-expert may not have access to, or may not have the necessary resources to collect: this greatly limits the number of tasks where model biases can be identified. In this work, we present Classifier-to-Bias (C2B), the first bias discovery framework that works without access to any labeled data: it only relies on a textual description of the classification task to identify biases in the target classification model. This description is fed to a large language model to generate bias proposals and corresponding captions depicting biases together with task-specific target labels. A retrieval model collects images for those captions, which are then used to assess the accuracy of the model wrt the given biases. C2B is training-free, does not require any annotations, has no constraints on the list of biases, and can be applied to any pre-trained model on any classification task. Experiments on two publicly available datasets show that C2B discovers biases beyond those of the original datasets and outperforms a recent state-of-the-art bias detection baseline that relies on task-specific annotations, being a promising first step toward addressing task-agnostic unsupervised bias detection.}
 }
 
@@ -463,7 +463,7 @@
   html={https://openreview.net/forum?id=eQ6VjBhevn},  
   pdf={https://openreview.net/pdf?id=eQ6VjBhevn},
   code={https://github.com/FarinaMatteo/zero},   
-  selected={true},
+  selected={false},
   abstract={Vision-Language Models seamlessly discriminate among arbitrary semantic categories, yet they still suffer from poor generalization when presented with challenging examples. For this reason, Episodic Test-Time Adaptation (TTA) strategies have recently emerged as powerful techniques to adapt VLMs in the presence of a single unlabeled image. The recent literature on TTA is dominated by the paradigm of prompt tuning by Marginal Entropy Minimization, which, relying on online backpropagation, inevitably slows down inference while increasing memory. In this work, we theoretically investigate the properties of this approach and unveil that a surprisingly strong TTA method lies dormant and hidden within it. We term this approach ZERO (TTA with “zero” temperature), whose design is both incredibly effective and frustratingly simple: augment N times, predict, retain the most confident predictions, and marginalize after setting the Softmax temperature to zero. Remarkably, ZERO requires a single batched forward pass through the vision encoder only and no backward passes. We thoroughly evaluate our approach following the experimental protocol established in the literature and show that ZERO largely surpasses or compares favorably w.r.t. the state-of-the-art while being almost 10× faster and 13× more memory friendly than standard Test-Time Prompt Tuning. Thanks to its simplicity and comparatively negligible computation, ZERO can serve as a strong baseline for future work in this field. Code will be available.}
 }
 
@@ -588,7 +588,7 @@
   pdf={https://openaccess.thecvf.com/content/CVPR2024/papers/DInca_OpenBias_Open-set_Bias_Detection_in_Text-to-Image_Generative_Models_CVPR_2024_paper.pdf},
   code={https://github.com/Picsart-AI-Research/OpenBias},
   note={(Highlight)},
-  selected={true},
+  selected={false},
   abstract={Text-to-image generative models are becoming increasingly popular and accessible to the general public. As these models see large-scale deployments it is necessary to deeply investigate their safety and fairness to not disseminate and perpetuate any kind of biases. However existing works focus on detecting closed sets of biases defined a priori limiting the studies to well-known concepts. In this paper we tackle the challenge of open-set bias detection in text-to-image generative models presenting OpenBias a new pipeline that identifies and quantifies the severity of biases agnostically without access to any precompiled set. OpenBias has three stages. In the first phase we leverage a Large Language Model (LLM) to propose biases given a set of captions. Secondly the target generative model produces images using the same set of captions. Lastly a Vision Question Answering model recognizes the presence and extent of the previously proposed biases. We study the behavior of Stable Diffusion 1.5 2 and XL emphasizing new biases never investigated before. Via quantitative experiments we demonstrate that OpenBias agrees with current closed-set bias detection methods and human judgement.}
 }
 
@@ -602,7 +602,7 @@
   html={https://openaccess.thecvf.com/content/CVPR2024/html/Zanella_Harnessing_Large_Language_Models_for_Training-free_Video_Anomaly_Detection_CVPR_2024_paper.html},  
   pdf={https://openaccess.thecvf.com/content/CVPR2024/papers/Zanella_Harnessing_Large_Language_Models_for_Training-free_Video_Anomaly_Detection_CVPR_2024_paper.pdf},
   code={https://lucazanella.github.io/lavad/},   
-  selected={true},
+  selected={false},
   abstract={Video anomaly detection (VAD) aims to temporally locate abnormal events in a video. Existing works mostly rely on training deep models to learn the distribution of normality with either video-level supervision one-class supervision or in an unsupervised setting. Training-based methods are prone to be domain-specific thus being costly for practical deployment as any domain change will involve data collection and model training. In this paper we radically depart from previous efforts and propose LAnguage-based VAD (LAVAD) a method tackling VAD in a novel training-free paradigm exploiting the capabilities of pre-trained large language models (LLMs) and existing vision-language models (VLMs). We leverage VLM-based captioning models to generate textual descriptions for each frame of any test video. With the textual scene description we then devise a prompting mechanism to unlock the capability of LLMs in terms of temporal aggregation and anomaly score estimation turning LLMs into an effective video anomaly detector. We further leverage modality-aligned VLMs and propose effective techniques based on cross-modal similarity for cleaning noisy captions and refining the LLM-based anomaly scores. We evaluate LAVAD on two large datasets featuring real-world surveillance scenarios (UCF-Crime and XD-Violence) showing that it outperforms both unsupervised and one-class methods without requiring any training or data collection.}
 }
 

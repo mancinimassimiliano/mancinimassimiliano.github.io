@@ -14,6 +14,7 @@ profile:
     <p>Trento, Italy</p>
 
 news: true # includes a list of news items
+team: false # set to true to show current members (from _data/team.yml) on the home page
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---

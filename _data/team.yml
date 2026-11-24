@@ -1,0 +1,123 @@
+# Team members, shown on /team/ and (current members only) on the home page.
+# Members and alumni are sorted alphabetically by first name automatically, so the
+# order in this file does not matter.
+#
+# Per-member fields (only `name` and `group` are required):
+#   name:        Full name
+#   group:       one of the ids listed under `groups` below
+#   role:        Text shown under the name (defaults to the group's `role`)
+#   affiliation: String or list of strings. Defaults to `default_affiliation`.
+#                Names listed under `affiliations` become links.
+#   coadvisor:   Co-supervisor, e.g. "Elisa Ricci"
+#   since:       Start year, e.g. 2024
+#   photo:       File in assets/img/team/ (square works best). Initials are shown if missing.
+#   url:         Personal website (the name links here)
+#   scholar:     Google Scholar URL
+#   linkedin:    LinkedIn URL
+#   home:        false to hide this person from the home-page strip
+
+default_affiliation: University of Trento
+
+# Affiliation name -> link. Add new institutions here.
+affiliations:
+  University of Trento: https://www.unitn.it
+  University of Twente: https://www.utwente.nl
+  Fondazione Bruno Kessler: https://www.fbk.eu
+
+# Display order and titles of the groups on /team/. Empty groups are hidden.
+groups:
+  - id: postdoc
+    title: postdocs
+    role: Postdoc
+  - id: phd
+    title: phd students
+    role: PhD student
+  - id: visiting
+    title: visiting researchers
+    role: Visiting researcher
+  - id: msc
+    title: msc students
+    role: MSc student
+
+members:
+  - name: Federico Bartsch
+    group: phd
+    since: 2025
+    coadvisor: Elisa Ricci
+    photo: bartsch.jpg
+    url: https://federico-bartsch.github.io/
+    scholar: https://scholar.google.com/citations?user=udzGY3AAAAAJ
+
+  - name: Davide Berasi
+    group: phd
+    since: 2025
+    coadvisor: Elisa Ricci
+    photo: berasi.jpg
+    url: https://mhug.disi.unitn.it/people/davide-berasi/
+    scholar: https://scholar.google.com/citations?user=qMniWoYAAAAJ
+
+  - name: Simone Caldarella
+    group: phd
+    since: 2023
+    coadvisor: Elisa Ricci
+    photo: caldarella.jpg
+    url: https://simonecaldarella.github.io/
+    scholar: https://scholar.google.com/citations?user=SbKT8v8AAAAJ
+
+  - name: Thomas De Min
+    group: phd
+    since: 2023
+    coadvisor: Elisa Ricci
+    photo: demin.jpg
+    url: https://mhug.disi.unitn.it/people/thomas-de-min/
+    scholar: https://scholar.google.com/citations?user=fnh_i0cAAAAJ
+
+  - name: Arda Eren Doğru
+    group: phd
+    since: 2026
+    photo: dogru.jpg
+    url: https://ardaerendogru.com/
+    scholar: https://scholar.google.com/citations?user=6P5XEP0AAAAJ
+
+  - name: Matteo Farina
+    group: phd
+    since: 2022
+    coadvisor: Elisa Ricci
+    photo: farina.jpg
+    url: https://farinamatteo.github.io/
+    scholar: https://scholar.google.com/citations?user=SxQwDD8AAAAJ
+
+  - name: Marco Garosi
+    group: phd
+    since: 2024
+    coadvisor: Elisa Ricci
+    photo: garosi.jpg
+    url: https://www.marcogarosi.it/
+    scholar: https://scholar.google.com/citations?user=BEIogS4AAAAJ
+
+  - name: Elisa Negrini
+    group: phd
+    since: 2026
+    coadvisor: Paolo Rota
+    photo: negrini.jpg
+    url: https://mhug.disi.unitn.it/people/elisa-negrini/
+
+  - name: Lorenzo Orsingher
+    group: phd
+    since: 2026
+    affiliation: University of Twente
+    coadvisor: Nicola Strisciuglio
+    photo: orsingher.jpg
+    url: https://people.utwente.nl/lorenzo.orsingher
+
+# Former members, shown only on /team/ (not on the home page).
+#   degree: e.g. "PhD", "Postdoc", "MSc"   years: e.g. "2021-2025"   now: next position
+#   affiliation and coadvisor work as for members (affiliation defaults to default_affiliation)
+alumni:
+  - name: Luca Zanella
+    degree: PhD
+    years: 2022-2026
+    coadvisor: Elisa Ricci
+    now: Focoos AI
+    url: https://lucazanella.github.io/
+    scholar: https://scholar.google.com/citations?user=GxviN7IAAAAJ

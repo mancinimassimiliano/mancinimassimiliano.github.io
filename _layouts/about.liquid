@@ -48,6 +48,14 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
+    <!-- Team -->
+    {% if page.team and site.data.team.members.size > 0 %}
+      <h2>
+        <a href="{{ '/team/' | relative_url }}" style="color: inherit">team</a>
+      </h2>
+      {% include team.liquid compact=true %}
+    {% endif %}
+
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
       <h2>
@@ -66,6 +74,7 @@ layout: default
 
     <!-- Social -->
     {% if page.social %}
+      <h2>links</h2>
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
 

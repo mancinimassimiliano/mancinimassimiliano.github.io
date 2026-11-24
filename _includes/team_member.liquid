@@ -1,0 +1,58 @@
+{% comment %}
+  One team-member card. Params: member, group (group entry from _data/team.yml), compact (bool)
+{% endcomment %}
+{% assign m = include.member %}
+{% assign team = site.data.team %}
+{% assign role = m.role | default: include.group.role %}
+{% assign affs = m.affiliation | default: team.default_affiliation %}
+<article class="team-member{% if include.compact %} compact{% endif %}">
+  {% if m.url %}<a href="{{ m.url }}" target="_blank" rel="noopener noreferrer">{% endif %}
+  {% if m.photo %}
+    <img class="team-avatar" src="{{ m.photo | prepend: 'assets/img/team/' | relative_url }}" alt="{{ m.name }}" loading="lazy">
+  {% else %}
+    {% assign parts = m.name | split: ' ' %}
+    <div class="team-avatar team-initials" aria-hidden="true">
+      {{- parts.first | slice: 0 -}}
+      {{- parts.last | slice: 0 -}}
+    </div>
+  {% endif %}
+  {% if m.url %}</a>{% endif %}
+  <div class="team-name">
+    {% if m.url %}
+      <a href="{{ m.url }}" target="_blank" rel="noopener noreferrer">{{ m.name }}</a>
+    {% else %}
+      {{ m.name }}
+    {% endif %}
+  </div>
+  <div class="team-role">
+    {{ role -}}
+    {%- if m.since and include.compact != true %} ({{ m.since }}-){% endif %}
+  </div>
+  <div class="team-affiliation">
+    {% for a in affs %}
+      {%- assign link = team.affiliations[a] -%}
+      {%- if link -%}
+        <a href="{{ link }}" target="_blank" rel="noopener noreferrer">{{ a }}</a>
+      {%- else -%}
+        {{- a -}}
+      {%- endif -%}
+      {%- unless forloop.last %} &amp; {% endunless -%}
+    {% endfor %}
+  </div>
+  {% unless include.compact %}
+    {% if m.coadvisor %}
+      <div class="team-extra">co-advised with {{ m.coadvisor }}</div>
+    {% endif %}
+    <div class="team-links">
+      {% if m.url %}
+        <a href="{{ m.url }}" target="_blank" rel="noopener noreferrer" title="Website"><i class="fa-solid fa-globe"></i></a>
+      {% endif %}
+      {% if m.scholar %}
+        <a href="{{ m.scholar }}" target="_blank" rel="noopener noreferrer" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+      {% endif %}
+      {% if m.linkedin %}
+        <a href="{{ m.linkedin }}" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      {% endif %}
+    </div>
+  {% endunless %}
+</article>

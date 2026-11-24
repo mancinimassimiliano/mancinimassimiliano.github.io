@@ -1,0 +1,61 @@
+{% comment %}
+  Team grid.
+  compact=true  -> home page: current members only, sorted by first name (members with `home: false` are skipped)
+  otherwise     -> /team/ page: one section per group, then alumni
+{% endcomment %}
+{% assign team = site.data.team %}
+{% if include.compact %}
+  {% assign sorted_people = team.members | sort: 'name' %}
+  <div class="team-grid compact">
+    {% for m in sorted_people %}
+      {% unless m.home == false %}
+        {% assign g = team.groups | where: 'id', m.group | first %}
+        {% include team_member.liquid member=m group=g compact=true %}
+      {% endunless %}
+    {% endfor %}
+  </div>
+  <p class="team-more"><a href="{{ '/team/' | relative_url }}">full team and alumni &rarr;</a></p>
+{% else %}
+  {% for g in team.groups %}
+    {% assign members = team.members | where: 'group', g.id %}
+    {% if members.size > 0 %}
+      {% assign sorted_people = members | sort: 'name' %}
+      <h2 class="team-group-title">{{ g.title }}</h2>
+      <div class="team-grid">
+        {% for m in sorted_people %}
+          {% include team_member.liquid member=m group=g %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  {% if team.alumni.size > 0 %}
+    {% assign sorted_people = team.alumni | sort: 'name' %}
+    <h2 class="team-group-title">alumni</h2>
+    <ul class="team-alumni">
+      {% for a in sorted_people %}
+        {% assign affs = a.affiliation | default: team.default_affiliation %}
+        <li>
+          <span class="team-alumni-name">
+            {%- if a.url -%}
+              <a href="{{ a.url }}" target="_blank" rel="noopener noreferrer">{{ a.name }}</a>
+            {%- else -%}
+              {{- a.name -}}
+            {%- endif -%}
+          </span>
+          <span class="team-alumni-info">
+            ({{ a.degree -}}
+            {%- if a.degree and affs %} at {% endif -%}
+            {%- for x in affs -%}
+              {{- x -}}
+              {%- unless forloop.last %} &amp; {% endunless -%}
+            {%- endfor -%}
+            {%- if a.years %}, {{ a.years }}{% endif -%}
+            {%- if a.coadvisor %}, co-advised with {{ a.coadvisor }}{% endif %})
+            {% if a.now %}&rarr; now at {{ a.now }}{% endif %}
+          </span>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endif %}

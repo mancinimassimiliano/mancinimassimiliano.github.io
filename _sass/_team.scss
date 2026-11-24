@@ -1,0 +1,124 @@
+/*******************************************************************************
+ * Team page and home-page team strip
+ ******************************************************************************/
+
+.team-group-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.25rem 0.75rem;
+  margin-bottom: 1rem;
+
+  &.compact {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1.25rem 0.5rem;
+  }
+}
+
+.team-member {
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  color: var(--global-text-color-light);
+
+  .team-avatar {
+    display: block;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 0.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--global-divider-color);
+  }
+
+  .team-initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: var(--global-theme-color);
+    background-color: var(--global-code-bg-color);
+  }
+
+  .team-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--global-theme-color);
+    a {
+      color: var(--global-theme-color);
+    }
+  }
+
+  .team-role {
+    color: var(--global-text-color);
+  }
+
+  .team-affiliation a {
+    color: inherit;
+    text-decoration: underline dotted;
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+
+  .team-extra {
+    font-style: italic;
+  }
+
+  .team-links {
+    margin-top: 0.2rem;
+    font-size: 1.1rem;
+    a + a {
+      margin-left: 0.5rem;
+    }
+    a {
+      color: var(--global-text-color-light);
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  &.compact {
+    font-size: 0.85rem;
+    .team-avatar {
+      width: 115px;
+      height: 115px;
+    }
+    .team-initials {
+      font-size: 2rem;
+    }
+    .team-name {
+      font-size: 1rem;
+    }
+  }
+}
+
+.team-more {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.team-alumni {
+  li {
+    margin-bottom: 0.5rem;
+  }
+  .team-alumni-name {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 0.25rem;
+    color: var(--global-theme-color);
+    a {
+      color: var(--global-theme-color);
+    }
+  }
+  .team-alumni-info {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+  }
+}
